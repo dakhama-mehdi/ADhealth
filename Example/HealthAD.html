@@ -1,0 +1,3276 @@
+﻿<!-- saved from url=(0014)about:internet -->
+ <!DOCTYPE html>
+ <html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="2025-04-26 09:50:05" name="revised"><title></title><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" as="style" type="text/css" rel="stylesheet preload prefetch"/><script comment="jquery" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script><link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><link href="https://cdn.datatables.net/select/1.3.4/css/select.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/select/1.3.4/js/dataTables.select.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.11.5/sorting/datetime-moment.js"></script><link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script><link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script><link href="https://cdn.jsdelivr.net/gh/evotecit/cdn@0.0.17/CSS/dataTables.searchBuilder.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/evotecit/cdn@0.0.17/JS/dataTables.searchBuilder.min.js"></script><style type="text/css">body {    font-family: 'Roboto Condensed', sans-serif;    font-size: 8pt;    margin: 0px;}input {    font-size: 8pt;}.main-section {    margin-top: 0px;}</style><style type="text/css">td {    height: 14px;}tfoot input {    width: 100%;    box-sizing: border-box;    padding: -3px;}thead input {    width: 100%;    box-sizing: border-box;    padding: -3px;}td::before, td.sorting_1::before {    background-color: #007bff !important;}button.dt-button {    color: blue !important;    border-radius: 5px;    line-height: 1 !important;}div.dataTables_wrapper {    margin: 5px;}</style><noscript><style type="text/css">table {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+table td {
+    border-width: 1px;
+    padding: 4px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+table thead th {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 17px;
+    border-bottom: 1px solid #111;
+    background-color: white;
+    color: black;
+}
+
+table tfoot th {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 17px;
+    border-top: 1px solid #111;
+    background-color: white;
+    color: black;
+}
+
+table tr:nth-of-type(odd) {
+    background-color: #F6F6F5;
+}
+
+table tr:nth-of-type(even) {
+    background-color: white;
+}
+
+table td, table th {
+    border: 1px solid black;
+}</style></noscript><style type="text/css">div.dt-button-collection {    position: relative;    width: auto !important;    margin-top: 10px !important;    margin-bottom: 10px !important;}</style><style type="text/css">.logo {    margin: 5px;}</style><style type="text/css">.defaultPanel {    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    transition: 0.3s;    border-radius: 5px;    margin: 5px;}</style><style type="text/css">@media all and (-ms-high-contrast:active) {.defaultSection {    display: flex;}}.defaultSection {    flex-direction: column;    border: 1px solid #bbbbbb;    padding-bottom: 0px;    margin: 5px;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    transition: 0.3s;    border-radius: 5px;}.defaultSectionHead {    display: flex;    justify-content: center;    padding: 5px;    margin: 0px 0px 0px 0px;    font-weight: bold;    background-color: #00bfff;    color: #ffffff;}</style><style type="text/css">.defaultText {    margin: 5px;}</style><style type="text/css">.overflowHidden {    overflow: hidden;    overflow-x: hidden;    overflow-y: hidden;}.flexParent {    display: flex;    justify-content: space-between;}.flexParentInvisible {    display: flex;    justify-content: space-between;}.flexElement {    flex-basis: 100%;    max-width: 100%;}.flexPanel {    flex-basis: 100%;    max-width: 100%;}.flex-grid {    display: flex;}</style><style type="text/css">.tabsWrapper {    text-align: center;    font-family: 'Roboto', sans-serif !important;    text-transform: uppercase;}[data-tabs] {    display: flex;    margin: 5px 5px 5px 5px;    padding: 0px;    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);    border-radius: 5px;    justify-content: center;    flex-wrap: wrap;}[data-tabs]>* {    cursor: pointer;    padding: 10px 20px;    flex-grow: 1;    flex-shrink: 1;    flex-basis: auto;}[data-tabs] .active {    background: #008080;    color: #fff;    border-radius: 5px;}[data-panes]>* {    display: none;}[data-panes]>.active {    display: block;}</style><style type="text/css">.defaultPanelUpuRtyse {
+    flex-basis: 90%;
+}</style></head><body><div class="main-section"><header><div class="defaultText"></div><br/><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><div id="anchor-2gczw7f" class="flexPanel overflowHidden "><div class="otehr"><a target="_blank"><img src="https://github.com/dakhama-mehdi/Harden-Sysvol/blob/main/Pictures/HardenSysvol.png?raw=true" width="50%"></img></a></div></div><div style="text-align:right" id="anchor-mych7z8" class="flexPanel overflowHidden "><div class="defaultText"></div><br/><div class="defaultText"><div Align="right"><span style="font-weight:bold;text-align:right;color:#0000ff;font-size:30px">AD Health : info.lab</span></div></div><div class="defaultText"><div Align="right"><span style="text-align:right;font-size:15px">Report date: 04/26/2025 09:46:26</span></div></div></div></div></div><div class="defaultText"></div><br/></header><div class="tabsWrapper"><div class="tabsSlimmer"><div data-tabs="true"><div id="Tab-kbc3s9om" class="active"><span>AD Health</span></div><div id="Tab-8h34z79w"><span>System State</span></div><div id="Tab-ydvsfhom"><span>AD roles</span></div><div id="Tab-revbx79q"><span>Inventory</span></div></div></div></div><div data-panes="true"><div id="Tab-kbc3s9om-Content" class="active"><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-qFnhlEtQ').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":false,
+"order":[],
+"rowGroup":"",
+"info":false,
+"procesing":true,
+"select":false,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"ServerName":"DC-1",
+"Connectivity":"Pass",
+"Advertising":"Pass",
+"FrsEvent":"Pass",
+"DFSREvent":"Fail",
+"SysVolCheck":"Pass",
+"KccEvent":"Pass",
+"RoleHolders":"Pass",
+"MachineAccount":"Pass",
+"NCSecDesc":"Pass",
+"NetLogons":"Pass",
+"ObjectsReplicated":"Pass",
+"Replications":"Pass",
+"RidManager":"Pass",
+"Services":"Pass",
+"SystemLog":"Fail",
+"VerifyReferences":"Pass"},{
+"ServerName":"DC-2",
+"Connectivity":"Pass",
+"Advertising":"Pass",
+"FrsEvent":"Pass",
+"DFSREvent":"Fail",
+"SysVolCheck":"Pass",
+"KccEvent":"Pass",
+"RoleHolders":"Pass",
+"MachineAccount":"Pass",
+"NCSecDesc":"Pass",
+"NetLogons":"Pass",
+"ObjectsReplicated":"Pass",
+"Replications":"Fail",
+"RidManager":"Pass",
+"Services":"Fail",
+"SystemLog":"Fail",
+"VerifyReferences":"Pass"}],
+"columns":[{
+"data":"ServerName"},{
+"data":"Connectivity"},{
+"data":"Advertising"},{
+"data":"FrsEvent"},{
+"data":"DFSREvent"},{
+"data":"SysVolCheck"},{
+"data":"KccEvent"},{
+"data":"RoleHolders"},{
+"data":"MachineAccount"},{
+"data":"NCSecDesc"},{
+"data":"NetLogons"},{
+"data":"ObjectsReplicated"},{
+"data":"Replications"},{
+"data":"RidManager"},{
+"data":"Services"},{
+"data":"SystemLog"},{
+"data":"VerifyReferences"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}},
+"rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Connectivity",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Connectivity",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Advertising",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Advertising",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"FrsEvent",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"FrsEvent",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSREvent",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSREvent",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SysVolCheck",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SysVolCheck",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KccEvent",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KccEvent",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RoleHolders",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RoleHolders",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"MachineAccount",
+"columnId":8,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [8], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"MachineAccount",
+"columnId":8,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [8], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NCSecDesc",
+"columnId":9,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [9], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NCSecDesc",
+"columnId":9,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [9], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogons",
+"columnId":10,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [10], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogons",
+"columnId":10,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [10], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ObjectsReplicated",
+"columnId":11,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [11], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ObjectsReplicated",
+"columnId":11,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [11], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Replications",
+"columnId":12,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [12], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Replications",
+"columnId":12,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [12], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RidManager",
+"columnId":13,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [13], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RidManager",
+"columnId":13,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [13], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Services",
+"columnId":14,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [14], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Services",
+"columnId":14,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [14], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SystemLog",
+"columnId":15,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [15], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SystemLog",
+"columnId":15,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [15], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"VerifyReferences",
+"columnId":16,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [16], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"VerifyReferences",
+"columnId":16,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [16], css, failCss); }}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-qFnhlEtQ" class="dataTables row-border"><thead><tr><th>ServerName</th><th>Connectivity</th><th>Advertising</th><th>FrsEvent</th><th>DFSREvent</th><th>SysVolCheck</th><th>KccEvent</th><th>RoleHolders</th><th>MachineAccount</th><th>NCSecDesc</th><th>NetLogons</th><th>ObjectsReplicated</th><th>Replications</th><th>RidManager</th><th>Services</th><th>SystemLog</th><th>VerifyReferences</th></tr></thead></table></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Replication and Backup Check">Replication and Backup Check </a>&nbsp;<a id="show_anchor-ep4kx6s" href="javascript:void(0)" onclick="show('anchor-ep4kx6s'); " style="display:none">(Show)</a><a id="hide_anchor-ep4kx6s" href="javascript:void(0)" onclick="hide('anchor-ep4kx6s'); " style="display:none">(Hide)</a></div></div><div name="anchor-ep4kx6s" id="anchor-ep4kx6s" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-ep4kx6s" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><div id="anchor-r20mits" class="flexPanel overflowHidden defaultPanelUpuRtyse"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-CUXpgRvD').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":false,
+"order":[],
+"rowGroup":"",
+"info":false,
+"procesing":true,
+"select":false,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"Name":"DC-1",
+"Type_de_sauvegarde":"WindowsBackup",
+"Etat":"Sucess",
+"Début":"25/02/2025 22:19:20",
+"Fin":"11/08/2022 12:04:28",
+"Duree":"-133 Weeks, -5 Days, -10 Hours, -14 Minutes"},{
+"Name":"DC-1",
+"Type_de_sauvegarde":"WindowsBackup",
+"Etat":"Sucess",
+"Début":"25/02/2025 22:19:20",
+"Fin":"11/08/2022 12:04:28",
+"Duree":"-133 Weeks, -5 Days, -10 Hours, -14 Minutes"}],
+"columns":[{
+"data":"Name"},{
+"data":"Type_de_sauvegarde"},{
+"data":"Etat"},{
+"data":"Début"},{
+"data":"Fin"},{
+"data":"Duree"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}},
+"rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Etat",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Sucess",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, null, css, failCss);     var css = {
+    "color":  "#000000",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Name",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":" ",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss); }}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-CUXpgRvD" class="dataTables row-border"><thead><tr><th>Name</th><th>Type_de_sauvegarde</th><th>Etat</th><th>Début</th><th>Fin</th><th>Duree</th></tr></thead><tfoot><tr><th>Name</th><th>Type_de_sauvegarde</th><th>Etat</th><th>Début</th><th>Fin</th><th>Duree</th></tr></tfoot></table></div></div><div id="anchor-87t2q9z" class="flexPanel overflowHidden defaultPanel"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-nnHfAxxd').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"DSAType":"Source",
+"Hostname":"DC-1",
+"Delta":"26m:34s",
+"Fails":"2",
+"Total":"5",
+"PctError":"40",
+"ErrorMsg":"(1908) Impossible de trouver un contrôleur de domaine pour ce domaine\."},{
+"DSAType":"Source",
+"Hostname":"DC-2",
+"Delta":"18m:40s",
+"Fails":"0",
+"Total":"5",
+"PctError":"0",
+"ErrorMsg":""},{
+"DSAType":"Destination",
+"Hostname":"DC-1",
+"Delta":"18m:41s",
+"Fails":"0",
+"Total":"5",
+"PctError":"0",
+"ErrorMsg":""},{
+"DSAType":"Destination",
+"Hostname":"DC-2",
+"Delta":"26m:35s",
+"Fails":"2",
+"Total":"5",
+"PctError":"40",
+"ErrorMsg":"(1908) Impossible de trouver un contrôleur de domaine pour ce domaine\."}],
+"columns":[{
+"data":"DSAType"},{
+"data":"Hostname"},{
+"data":"Delta"},{
+"data":"Fails"},{
+"data":"Total"},{
+"data":"PctError"},{
+"data":"ErrorMsg"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-nnHfAxxd" class="dataTables display compact"><thead><tr><th>DSAType</th><th>Hostname</th><th>Delta</th><th>Fails</th><th>Total</th><th>PctError</th><th>ErrorMsg</th></tr></thead><tfoot><tr><th>DSAType</th><th>Hostname</th><th>Delta</th><th>Fails</th><th>Total</th><th>PctError</th><th>ErrorMsg</th></tr></tfoot></table></div></div><div id="anchor-l3mp521" class="flexPanel overflowHidden defaultPanel"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead"><div class="defaultSectionText"><a name="Test DNS">Test DNS </a>&nbsp;<a id="show_anchor-gemb3ij" href="javascript:void(0)" onclick="show('anchor-gemb3ij'); " style="display:none">(Show)</a><a id="hide_anchor-gemb3ij" href="javascript:void(0)" onclick="hide('anchor-gemb3ij'); " style="display:none">(Hide)</a></div></div><div name="anchor-gemb3ij" id="anchor-gemb3ij" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-gemb3ij" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-VEIUbqao').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":false,
+"order":[],
+"rowGroup":"",
+"info":false,
+"procesing":true,
+"select":false,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"Server":"DC-2",
+"Auth":"PASS",
+"Basc":"FAIL",
+"Forw":"PASS",
+"Del":"PASS",
+"Dyn":"PASS",
+"RReg":"FAIL",
+"Ext":"n/a"},{
+"Server":"DC-1",
+"Auth":"PASS",
+"Basc":"PASS",
+"Forw":"PASS",
+"Del":"PASS",
+"Dyn":"PASS",
+"RReg":"PASS",
+"Ext":"n/a"}],
+"columns":[{
+"data":"Server"},{
+"data":"Auth"},{
+"data":"Basc"},{
+"data":"Forw"},{
+"data":"Del"},{
+"data":"Dyn"},{
+"data":"RReg"},{
+"data":"Ext"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}},
+"rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss); }}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-VEIUbqao" class="dataTables row-border"><thead><tr><th>Server</th><th>Auth</th><th>Basc</th><th>Forw</th><th>Del</th><th>Dyn</th><th>RReg</th><th>Ext</th></tr></thead><tfoot><tr><th>Server</th><th>Auth</th><th>Basc</th><th>Forw</th><th>Del</th><th>Dyn</th><th>RReg</th><th>Ext</th></tr></tfoot></table></div></div></div></div></div></div></div></div></div><div id="Tab-8h34z79w-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="AD Mode">AD Mode </a>&nbsp;<a id="show_anchor-o0pw3nm" href="javascript:void(0)" onclick="show('anchor-o0pw3nm'); " style="display:none">(Show)</a><a id="hide_anchor-o0pw3nm" href="javascript:void(0)" onclick="hide('anchor-o0pw3nm'); " style="display:none">(Hide)</a></div></div><div name="anchor-o0pw3nm" id="anchor-o0pw3nm" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-o0pw3nm" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><div style="background-color:#afeeee;border-radius:10px;text-align:right" id="anchor-o28jude" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Forest : info.lab</span></div></div></span></div></div><div style="background-color:#ffe4c4;border-radius:10px;text-align:right" id="anchor-vguj7i4" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Mode : Windows2016Forest </span></div></div></span></div></div><div style="background-color:#afeeee;border-radius:10px;text-align:right" id="anchor-fyj5i73" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Domain : info</span></div></div></span></div></div><div style="background-color:#ffe4c4;border-radius:10px;text-align:right" id="anchor-790q2wc" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Mode : Windows2016Domain </span></div></div></span></div></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="DC infos">DC infos </a>&nbsp;<a id="show_anchor-n2col6x" href="javascript:void(0)" onclick="show('anchor-n2col6x'); " style="display:none">(Show)</a><a id="hide_anchor-n2col6x" href="javascript:void(0)" onclick="hide('anchor-n2col6x'); " style="display:none">(Hide)</a></div></div><div name="anchor-n2col6x" id="anchor-n2col6x" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-n2col6x" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-lnafciin').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"ServerName":"DC-1",
+"roles":"SC-MN-P-R-I",
+"Domain":"info\.lab",
+"OS":"2019 Datacenter",
+"Site":"Site-Local",
+"Marque":"Microsoft Corporation",
+"Model":"Virtual Machine",
+"GC":"True",
+"RODC":"False",
+"IP4":"192\.168\.10\.10",
+"FW Mode":"domain",
+"FW State":"True"},{
+"ServerName":"DC-2",
+"roles":"None",
+"Domain":"info\.lab",
+"OS":"2025 Standard",
+"Site":"Site-Local",
+"Marque":"Microsoft Corporation",
+"Model":"Virtual Machine",
+"GC":"True",
+"RODC":"False",
+"IP4":"192\.168\.10\.12",
+"FW Mode":"domain",
+"FW State":"False"}],
+"columns":[{
+"data":"ServerName"},{
+"data":"roles"},{
+"data":"Domain"},{
+"data":"OS"},{
+"data":"Site"},{
+"data":"Marque"},{
+"data":"Model"},{
+"data":"GC"},{
+"data":"RODC"},{
+"data":"IP4"},{
+"data":"FW Mode"},{
+"data":"FW State"}],
+"deferRender":true,
+"buttons":[{
+"extend":"copyHtml5"},{
+"extend":"excelHtml5",
+"exportOptions":{
+"format":    {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }}},{
+"extend":"csvHtml5"},{
+"extend":"pdfHtml5",
+"pageSize":"A3",
+"orientation":"landscape"},{
+"extend":"searchBuilder",
+"config":{
+}}],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-lnafciin" class="dataTables display compact"><thead><tr><th>ServerName</th><th>roles</th><th>Domain</th><th>OS</th><th>Site</th><th>Marque</th><th>Model</th><th>GC</th><th>RODC</th><th>IP4</th><th>FW Mode</th><th>FW State</th></tr></thead></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="System stats">System stats </a>&nbsp;<a id="show_anchor-okph6d0" href="javascript:void(0)" onclick="show('anchor-okph6d0'); " style="display:none">(Show)</a><a id="hide_anchor-okph6d0" href="javascript:void(0)" onclick="hide('anchor-okph6d0'); " style="display:none">(Hide)</a></div></div><div name="anchor-okph6d0" id="anchor-okph6d0" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-okph6d0" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-ATHfcsOq').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"ServerName":"DC-1",
+"UpTime":"5 Days, 3 Hours, 40 Minutes",
+"BootUpTime":"21-04-2025",
+"C: Free Space":"27\.13 GB",
+"Memory Usage":"79,54 %",
+"Physical RAM":"1 GB",
+"CPU Usage":"11 %",
+"IPForwarder":"8\.8\.8\.8"},{
+"ServerName":"DC-2",
+"UpTime":"7 Minutes",
+"BootUpTime":"26-04-2025",
+"C: Free Space":"40\.97 GB",
+"Memory Usage":"72,22 %",
+"Physical RAM":"0\.98 GB",
+"CPU Usage":"17 %",
+"IPForwarder":"8\.8\.8\.8"}],
+"columns":[{
+"data":"ServerName"},{
+"data":"UpTime"},{
+"data":"BootUpTime"},{
+"data":"C: Free Space"},{
+"data":"Memory Usage"},{
+"data":"Physical RAM"},{
+"data":"CPU Usage"},{
+"data":"IPForwarder"}],
+"deferRender":true,
+"buttons":[{
+"extend":"copyHtml5"},{
+"extend":"excelHtml5",
+"exportOptions":{
+"format":    {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }}},{
+"extend":"csvHtml5"},{
+"extend":"pdfHtml5",
+"pageSize":"A3",
+"orientation":"landscape"},{
+"extend":"searchBuilder",
+"config":{
+}}],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-ATHfcsOq" class="dataTables display compact"><thead><tr><th>ServerName</th><th>UpTime</th><th>BootUpTime</th><th>C: Free Space</th><th>Memory Usage</th><th>Physical RAM</th><th>CPU Usage</th><th>IPForwarder</th></tr></thead></table></div></div></div></div></div><div id="Tab-ydvsfhom-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Services">Services </a>&nbsp;<a id="show_anchor-ic18vft" href="javascript:void(0)" onclick="show('anchor-ic18vft'); " style="display:none">(Show)</a><a id="hide_anchor-ic18vft" href="javascript:void(0)" onclick="hide('anchor-ic18vft'); " style="display:none">(Hide)</a></div></div><div name="anchor-ic18vft" id="anchor-ic18vft" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-ic18vft" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-SgnrNUFo').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":false,
+"order":[],
+"rowGroup":"",
+"info":false,
+"procesing":false,
+"select":true,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"ServerName":"DC-1",
+"ADWS":"Running",
+"NTDS":"Running",
+"NetLogon":"Running",
+"DFSR":"Running",
+"KDC":"Running",
+"DNS":"Running",
+"Eventlog":"Running"},{
+"ServerName":"DC-2",
+"ADWS":"Running",
+"NTDS":"Running",
+"NetLogon":"Running",
+"DFSR":"Running",
+"KDC":"Running",
+"DNS":"Running",
+"Eventlog":"Running"}],
+"columns":[{
+"data":"ServerName"},{
+"data":"ADWS"},{
+"data":"NTDS"},{
+"data":"NetLogon"},{
+"data":"DFSR"},{
+"data":"KDC"},{
+"data":"DNS"},{
+"data":"Eventlog"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}},
+"rowCallback": function (row, data) {     var css = {
+    "color":  "#000000",
+    "background-color":  "#ffffff",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ADWS",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ADWS",
+"columnId":1,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NTDS",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NTDS",
+"columnId":2,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogon",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogon",
+"columnId":3,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSR",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSR",
+"columnId":4,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KDC",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KDC",
+"columnId":5,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DNS",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DNS",
+"columnId":6,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Eventlog",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Eventlog",
+"columnId":7,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss); }}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-SgnrNUFo" class="dataTables display compact"><thead><tr><th>ServerName</th><th>ADWS</th><th>NTDS</th><th>NetLogon</th><th>DFSR</th><th>KDC</th><th>DNS</th><th>Eventlog</th></tr></thead></table></div></div></div></div><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Update">Update </a>&nbsp;<a id="show_anchor-u3g46zj" href="javascript:void(0)" onclick="show('anchor-u3g46zj'); " style="display:none">(Show)</a><a id="hide_anchor-u3g46zj" href="javascript:void(0)" onclick="hide('anchor-u3g46zj'); " style="display:none">(Hide)</a></div></div><div name="anchor-u3g46zj" id="anchor-u3g46zj" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-u3g46zj" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-SdPwTRne').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":true,
+"stateSave":true,
+"paging":true,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"PSComputerName":"DC-1",
+"Description":"Security Update",
+"HotFixID":"KB5055519",
+"InstalledBy":"AUTORITE NT\\Système",
+"InstalledOn":"2025-04-09"},{
+"PSComputerName":"DC-1",
+"Description":"Security Update",
+"HotFixID":"KB5055662",
+"InstalledBy":"AUTORITE NT\\Système",
+"InstalledOn":"2025-04-09"},{
+"PSComputerName":"DC-1",
+"Description":"Update",
+"HotFixID":"KB5054695",
+"InstalledBy":"AUTORITE NT\\Système",
+"InstalledOn":"2025-04-09"},{
+"PSComputerName":"DC-2",
+"Description":"Security Update",
+"HotFixID":"KB5058538",
+"InstalledBy":"",
+"InstalledOn":"2025-04-06"},{
+"PSComputerName":"DC-2",
+"Description":"Security Update",
+"HotFixID":"KB5055523",
+"InstalledBy":"",
+"InstalledOn":"2025-04-06"},{
+"PSComputerName":"DC-2",
+"Description":"Update",
+"HotFixID":"KB5049622",
+"InstalledBy":"",
+"InstalledOn":"2025-04-06"}],
+"columns":[{
+"data":"PSComputerName"},{
+"data":"Description"},{
+"data":"HotFixID"},{
+"data":"InstalledBy"},{
+"data":"InstalledOn"}],
+"deferRender":true,
+"buttons":[{
+"extend":"copyHtml5"},{
+"extend":"excelHtml5",
+"exportOptions":{
+"format":    {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }}},{
+"extend":"csvHtml5"},{
+"extend":"pdfHtml5",
+"pageSize":"A3",
+"orientation":"landscape"},{
+"extend":"pageLength"},{
+"extend":"searchBuilder",
+"config":{
+}}],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-SdPwTRne" class="dataTables display compact"><thead><tr><th>PSComputerName</th><th>Description</th><th>HotFixID</th><th>InstalledBy</th><th>InstalledOn</th></tr></thead></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:70%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Test Partition">Test Partition </a>&nbsp;<a id="show_anchor-rb1s8nc" href="javascript:void(0)" onclick="show('anchor-rb1s8nc'); " style="display:none">(Show)</a><a id="hide_anchor-rb1s8nc" href="javascript:void(0)" onclick="hide('anchor-rb1s8nc'); " style="display:none">(Hide)</a></div></div><div name="anchor-rb1s8nc" id="anchor-rb1s8nc" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-rb1s8nc" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-VeEszheN').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":false,
+"stateSave":true,
+"paging":false,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"language":{
+},
+"data":[{
+"TestName":"CheckSDRefDom",
+"zoneTest":"ForestDnsZones",
+"TestResult":"réussi"},{
+"TestName":"CrossRefValidation",
+"zoneTest":"ForestDnsZones",
+"TestResult":"réussi"},{
+"TestName":"CheckSDRefDom",
+"zoneTest":"DomainDnsZones",
+"TestResult":"réussi"},{
+"TestName":"CrossRefValidation",
+"zoneTest":"DomainDnsZones",
+"TestResult":"réussi"},{
+"TestName":"CheckSDRefDom",
+"zoneTest":"Schema",
+"TestResult":"réussi"},{
+"TestName":"CrossRefValidation",
+"zoneTest":"Schema",
+"TestResult":"réussi"},{
+"TestName":"CheckSDRefDom",
+"zoneTest":"Configuration",
+"TestResult":"réussi"},{
+"TestName":"CrossRefValidation",
+"zoneTest":"Configuration",
+"TestResult":"réussi"},{
+"TestName":"CheckSDRefDom",
+"zoneTest":"info",
+"TestResult":"réussi"},{
+"TestName":"CrossRefValidation",
+"zoneTest":"info",
+"TestResult":"réussi"}],
+"columns":[{
+"data":"TestName"},{
+"data":"zoneTest"},{
+"data":"TestResult"}],
+"deferRender":true,
+"buttons":[],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-VeEszheN" class="dataTables display compact"><thead><tr><th>TestName</th><th>zoneTest</th><th>TestResult</th></tr></thead><tfoot><tr><th>TestName</th><th>zoneTest</th><th>TestResult</th></tr></tfoot></table></div></div></div></div></div></div></div><div id="Tab-revbx79q-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Roles Installed">Roles Installed </a>&nbsp;<a id="show_anchor-aivm5hc" href="javascript:void(0)" onclick="show('anchor-aivm5hc'); " style="display:none">(Show)</a><a id="hide_anchor-aivm5hc" href="javascript:void(0)" onclick="hide('anchor-aivm5hc'); " style="display:none">(Hide)</a></div></div><div name="anchor-aivm5hc" id="anchor-aivm5hc" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-aivm5hc" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-UozdWOKq').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":true,
+"stateSave":true,
+"paging":true,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"pageLength":10,
+"language":{
+},
+"data":[{
+"ServerName":"DC-1",
+"Name":"DHCP",
+"DisplayName":"Serveur DHCP",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"DNS",
+"DisplayName":"Serveur DNS",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"Web-Server",
+"DisplayName":"Serveur Web (IIS)",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"Web-WebServer",
+"DisplayName":"Serveur Web",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Common-Http",
+"DisplayName":"Fonctionnalités HTTP communes",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Static-Content",
+"DisplayName":"Contenu statique",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Default-Doc",
+"DisplayName":"Document par défaut",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Http-Errors",
+"DisplayName":"Erreurs HTTP",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Dir-Browsing",
+"DisplayName":"Exploration de répertoire",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Http-Redirect",
+"DisplayName":"Redirection HTTP",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Health",
+"DisplayName":"Intégrité et diagnostics",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Http-Logging",
+"DisplayName":"Journalisation HTTP",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Request-Monitor",
+"DisplayName":"Observateur de demandes",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Log-Libraries",
+"DisplayName":"Outils de journalisation",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Http-Tracing",
+"DisplayName":"Suivi de traces",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Performance",
+"DisplayName":"Performance",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Stat-Compression",
+"DisplayName":"Compression du contenu statique",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Security",
+"DisplayName":"Sécurité",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Filtering",
+"DisplayName":"Filtrage des demandes",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Windows-Auth",
+"DisplayName":"Authentification Windows",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-IP-Security",
+"DisplayName":"Restrictions IP et de domaine",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-App-Dev",
+"DisplayName":"Développement d'applications",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-ASP",
+"DisplayName":"ASP",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-ISAPI-Ext",
+"DisplayName":"Extensions ISAPI",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Mgmt-Tools",
+"DisplayName":"Outils de gestion",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Mgmt-Console",
+"DisplayName":"Console de gestion IIS",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Mgmt-Compat",
+"DisplayName":"Compatibilité avec la gestion IIS 6",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Metabase",
+"DisplayName":"Compatibilité de métadonnées IIS 6",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Web-Scripting-Tools",
+"DisplayName":"Scripts et outils de gestion IIS",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"AD-Domain-Services",
+"DisplayName":"Services AD DS",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"AD-Certificate",
+"DisplayName":"Services de certificats Active Directory",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"ADCS-Cert-Authority",
+"DisplayName":"Autorité de certification",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"ADCS-Web-Enrollment",
+"DisplayName":"Inscription de l’autorité de certification via le Web",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FileAndStorage-Services",
+"DisplayName":"Services de fichiers et de stockage",
+"FeatureType":"Role"},{
+"ServerName":"DC-1",
+"Name":"File-Services",
+"DisplayName":"Services de fichiers et iSCSI",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FS-FileServer",
+"DisplayName":"Serveur de fichiers",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FS-SyncShareService",
+"DisplayName":"Dossiers de travail",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FS-DFS-Namespace",
+"DisplayName":"Espaces de noms DFS",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FS-Resource-Manager",
+"DisplayName":"Gestionnaire de ressources du serveur de fichiers",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"FS-DFS-Replication",
+"DisplayName":"Réplication DFS",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Storage-Services",
+"DisplayName":"Services de stockage",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-1",
+"Name":"Remote-Assistance",
+"DisplayName":"Assistance à distance",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"Windows-Internal-Database",
+"DisplayName":"Base de données interne Windows",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"NET-Framework-45-Features",
+"DisplayName":"Fonctionnalités de \.NET Framework 4\.7",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"NET-Framework-45-Core",
+"DisplayName":"\.NET Framework 4\.7",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"NET-WCF-Services45",
+"DisplayName":"Services WCF",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"NET-WCF-TCP-PortSharing45",
+"DisplayName":"Partage de port TCP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"GPMC",
+"DisplayName":"Gestion de stratégie de groupe",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"Web-WHC",
+"DisplayName":"IIS Hostable Web Core",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT",
+"DisplayName":"Outils d’administration de serveur distant",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-Feature-Tools",
+"DisplayName":"Outils d’administration de fonctionnalités",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-SNMP",
+"DisplayName":"Outils SNMP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-System-Insights",
+"DisplayName":"System Insights Module for Windows PowerShell",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-Role-Tools",
+"DisplayName":"Outils d’administration de rôles",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-AD-Tools",
+"DisplayName":"Outils AD DS et AD LDS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-AD-PowerShell",
+"DisplayName":"Module Active Directory pour Windows PowerShell",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-ADDS",
+"DisplayName":"Outils AD DS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-AD-AdminCenter",
+"DisplayName":"Centre d’administration Active Directory",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-ADDS-Tools",
+"DisplayName":"Composants logiciels enfichables et outils en ligne de commande AD DS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-NPAS",
+"DisplayName":"Outils de la stratégie réseau et des services d'accès",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-File-Services",
+"DisplayName":"Outils de services de fichiers",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-DFS-Mgmt-Con",
+"DisplayName":"Outils de gestion DFS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-FSRM-Mgmt",
+"DisplayName":"Outils du Gestionnaire de ressources du serveur de fichiers",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-ADCS",
+"DisplayName":"Outils des services de certificats Active Directory",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-ADCS-Mgmt",
+"DisplayName":"Outils de gestion de l’autorité de certification",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-DHCP",
+"DisplayName":"Outils du serveur DHCP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"RSAT-DNS-Server",
+"DisplayName":"Outils du serveur DNS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"WoW64-Support",
+"DisplayName":"Prise en charge WoW64",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"CMAK",
+"DisplayName":"RAS Connection Manager Administration Kit (CMAK)",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"Windows-Server-Backup",
+"DisplayName":"Sauvegarde Windows Server",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"SNMP-Service",
+"DisplayName":"Service SNMP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"SNMP-WMI-Provider",
+"DisplayName":"Fournisseur WMI SNMP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"FS-SMB1",
+"DisplayName":"SMB 1\.0/CIFS File Sharing Support",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"FS-SMB1-CLIENT",
+"DisplayName":"SMB 1\.0/CIFS Client",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"FS-SMB1-SERVER",
+"DisplayName":"SMB 1\.0/CIFS Server",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"System-DataArchiver",
+"DisplayName":"System Data Archiver",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"System-Insights",
+"DisplayName":"System Insights",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"Telnet-Client",
+"DisplayName":"Telnet Client",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"Windows-Defender",
+"DisplayName":"Windows Defender Antivirus",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"PowerShellRoot",
+"DisplayName":"Windows PowerShell",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"PowerShell",
+"DisplayName":"Windows PowerShell 5\.1",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"PowerShell-ISE",
+"DisplayName":"Windows PowerShell ISE",
+"FeatureType":"Feature"},{
+"ServerName":"DC-1",
+"Name":"XPS-Viewer",
+"DisplayName":"XPS Viewer",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"DNS",
+"DisplayName":"Serveur DNS",
+"FeatureType":"Role"},{
+"ServerName":"DC-2",
+"Name":"AD-Domain-Services",
+"DisplayName":"Services de domaine Active Directory",
+"FeatureType":"Role"},{
+"ServerName":"DC-2",
+"Name":"FileAndStorage-Services",
+"DisplayName":"Services de fichiers et de stockage",
+"FeatureType":"Role"},{
+"ServerName":"DC-2",
+"Name":"File-Services",
+"DisplayName":"Services de fichiers et iSCSI",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-2",
+"Name":"FS-FileServer",
+"DisplayName":"Serveur de fichiers",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-2",
+"Name":"Storage-Services",
+"DisplayName":"Services de stockage",
+"FeatureType":"Role Service"},{
+"ServerName":"DC-2",
+"Name":"NET-Framework-45-Features",
+"DisplayName":"\.NET Framework 4\.8 Features",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"NET-Framework-45-Core",
+"DisplayName":"\.NET Framework 4\.8",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"NET-WCF-Services45",
+"DisplayName":"Services WCF",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"NET-WCF-TCP-PortSharing45",
+"DisplayName":"Partage de port TCP",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"Windows-Defender",
+"DisplayName":"Antivirus Microsoft Defender",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"GPMC",
+"DisplayName":"Gestion de stratégie de groupe",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT",
+"DisplayName":"Outils d’administration de serveur distant",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-Role-Tools",
+"DisplayName":"Outils d’administration de rôles",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-AD-Tools",
+"DisplayName":"Outils AD DS et AD LDS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-AD-PowerShell",
+"DisplayName":"Module Active Directory pour Windows PowerShell",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-ADDS",
+"DisplayName":"Outils AD DS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-AD-AdminCenter",
+"DisplayName":"Centre d’administration Active Directory",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-ADDS-Tools",
+"DisplayName":"Composants logiciels enfichables et outils en ligne de commande AD DS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"RSAT-DNS-Server",
+"DisplayName":"Outils du serveur DNS",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"WoW64-Support",
+"DisplayName":"Prise en charge WoW64",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"System-DataArchiver",
+"DisplayName":"Programme d'archivage de données système",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"PowerShellRoot",
+"DisplayName":"Windows PowerShell",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"PowerShell",
+"DisplayName":"Windows PowerShell 5\.1",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"Wireless-Networking",
+"DisplayName":"Wireless LAN Service",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"WindowsAdminCenterSetup",
+"DisplayName":"Ẅïπďбώś Ąδmїń Сĕŋţěя Şèţцр",
+"FeatureType":"Feature"},{
+"ServerName":"DC-2",
+"Name":"XPS-Viewer",
+"DisplayName":"XPS Viewer",
+"FeatureType":"Feature"}],
+"columns":[{
+"data":"ServerName"},{
+"data":"Name"},{
+"data":"DisplayName"},{
+"data":"FeatureType"}],
+"deferRender":true,
+"buttons":[{
+"extend":"copyHtml5"},{
+"extend":"excelHtml5",
+"exportOptions":{
+"format":    {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }}},{
+"extend":"csvHtml5"},{
+"extend":"pdfHtml5",
+"pageSize":"A3",
+"orientation":"landscape"},{
+"extend":"pageLength"},{
+"extend":"searchBuilder",
+"config":{
+}}],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-UozdWOKq" class="dataTables display compact"><thead><tr><th>ServerName</th><th>Name</th><th>DisplayName</th><th>FeatureType</th></tr></thead><tfoot><tr><th>ServerName</th><th>Name</th><th>DisplayName</th><th>FeatureType</th></tr></tfoot></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Software Installed">Software Installed </a>&nbsp;<a id="show_anchor-jyf3web" href="javascript:void(0)" onclick="show('anchor-jyf3web'); " style="display:none">(Show)</a><a id="hide_anchor-jyf3web" href="javascript:void(0)" onclick="hide('anchor-jyf3web'); " style="display:none">(Hide)</a></div></div><div name="anchor-jyf3web" id="anchor-jyf3web" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-jyf3web" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-UCfRUNBC').DataTable(
+                        {
+"dom":"ABfrtip",
+"searchFade":false,
+"scrollCollapse":false,
+"ordering":true,
+"order":[0,"asc"],
+"rowGroup":"",
+"info":true,
+"procesing":true,
+"select":true,
+"searching":true,
+"stateSave":true,
+"paging":true,
+"pagingType":["full_numbers"],
+"lengthMenu":[[15,25,50,100,-1],[15,25,50,100,"All"]],
+"pageLength":10,
+"language":{
+},
+"data":[{
+"Computername":"DC-1",
+"Displayname":"Notepad++ (64-bit x64)",
+"Version":"8\.4\.8",
+"InstallDate":"",
+"Publisher":"Notepad++ Team",
+"EstimatedSizeMB":"15.97"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Visual C++ 2022 X64 Additional Runtime - 14\.36\.32532",
+"Version":"14\.36\.32532",
+"InstallDate":"2024-08-17",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"11.6"},{
+"Computername":"DC-1",
+"Displayname":"7-Zip 19\.00 (x64 edition)",
+"Version":"19\.00\.00\.0",
+"InstallDate":"2020-11-03",
+"Publisher":"Igor Pavlov",
+"EstimatedSizeMB":"5.13"},{
+"Computername":"DC-1",
+"Displayname":"NSClient++ (x64)",
+"Version":"0\.4\.4\.23",
+"InstallDate":"2023-02-28",
+"Publisher":"MySolutions NORDIC",
+"EstimatedSizeMB":"86.3"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Network Monitor 3\.4",
+"Version":"3\.4\.2350\.0",
+"InstallDate":"2021-04-04",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"11.23"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office 64-bit Components 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"47.44"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Shared 64-bit MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"12.04"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Network Monitor: NetworkMonitor Parsers 3\.4",
+"Version":"3\.4\.2350\.0",
+"InstallDate":"2021-04-04",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"20.36"},{
+"Computername":"DC-1",
+"Displayname":"NXLog-CE",
+"Version":"3\.2\.2329",
+"InstallDate":"2023-04-17",
+"Publisher":"NXLog Ltd",
+"EstimatedSizeMB":"11.61"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Visual C++ 2022 X64 Minimum Runtime - 14\.36\.32532",
+"Version":"14\.36\.32532",
+"InstallDate":"2024-08-17",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"2.29"},{
+"Computername":"DC-1",
+"Displayname":"NCPA",
+"Version":"2\.4\.0",
+"InstallDate":"",
+"Publisher":"Nagios Enterprises, LLC",
+"EstimatedSizeMB":"17.83"},{
+"Computername":"DC-1",
+"Displayname":"Npcap",
+"Version":"1\.78",
+"InstallDate":"",
+"Publisher":"Nmap Project",
+"EstimatedSizeMB":"0"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Professionnel Plus 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"0"},{
+"Computername":"DC-1",
+"Displayname":"Total Network Inventory 4\.9\.0 (build 5222)",
+"Version":"4\.9\.0 (build 5222)",
+"InstallDate":"2021-04-16",
+"Publisher":"Softinventive Lab",
+"EstimatedSizeMB":"53.43"},{
+"Computername":"DC-1",
+"Displayname":"Wireshark 4\.2\.6 x64",
+"Version":"4\.2\.6",
+"InstallDate":"",
+"Publisher":"The Wireshark developer community, https://www\.wireshark\.org",
+"EstimatedSizeMB":"234.47"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Edge",
+"Version":"135\.0\.3179\.98",
+"InstallDate":"2021-03-18",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"95.43"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14\.36\.32532",
+"Version":"14\.36\.32532\.0",
+"InstallDate":"",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"20.6"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Access MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"11.08"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Excel MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"13.18"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft PowerPoint MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"32.54"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Publisher MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"17.9"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Outlook MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"15.18"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Word MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"19.77"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Proofing Tools 2013 - اللغة العربية",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"26.09"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Korrekturhilfen 2013 - Deutsch",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"35.83"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Proofing Tools 2013 - English",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"20.85"},{
+"Computername":"DC-1",
+"Displayname":"Outils de vérification linguistique 2013 de Microsoft Office - Français",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"27.82"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Proofing Tools 2013 - Nederlands",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"11.3"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Proofing Tools 2013 - Español",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"22.87"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Proofing (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"0.86"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft InfoPath MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"10.16"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Shared MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"41.89"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft DCF MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"1.39"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft OneNote MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"28.11"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Groove MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"8.69"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office OSM MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"1.02"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office OSM UX MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"8.1"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Lync MUI (French) 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"5.55"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Office Professional Plus 2013",
+"Version":"15\.0\.4569\.1506",
+"InstallDate":"2021-02-10",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"1451.34"},{
+"Computername":"DC-1",
+"Displayname":"Microsoft Visual C++ 2010  x86 Redistributable - 10\.0\.40219",
+"Version":"10\.0\.40219",
+"InstallDate":"2021-04-16",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"11.13"},{
+"Computername":"DC-2",
+"Displayname":"Microsoft Edge",
+"Version":"135\.0\.3179\.85",
+"InstallDate":"2025-04-18",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"0"},{
+"Computername":"DC-2",
+"Displayname":"Microsoft Edge WebView2 Runtime",
+"Version":"135\.0\.3179\.85",
+"InstallDate":"2025-04-18",
+"Publisher":"Microsoft Corporation",
+"EstimatedSizeMB":"0"}],
+"columns":[{
+"data":"Computername"},{
+"data":"Displayname"},{
+"data":"Version"},{
+"data":"InstallDate"},{
+"data":"Publisher"},{
+"data":"EstimatedSizeMB"}],
+"deferRender":true,
+"buttons":[{
+"extend":"copyHtml5"},{
+"extend":"excelHtml5",
+"exportOptions":{
+"format":    {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }}},{
+"extend":"csvHtml5"},{
+"extend":"pdfHtml5",
+"pageSize":"A3",
+"orientation":"landscape"},{
+"extend":"pageLength"},{
+"extend":"searchBuilder",
+"config":{
+}}],
+"responsive":{
+"details":{
+"type":"inline"}}}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-UCfRUNBC" class="dataTables display compact"><thead><tr><th>Computername</th><th>Displayname</th><th>Version</th><th>InstallDate</th><th>Publisher</th><th>EstimatedSizeMB</th></tr></thead><tfoot><tr><th>Computername</th><th>Displayname</th><th>Version</th><th>InstallDate</th><th>Publisher</th><th>EstimatedSizeMB</th></tr></tfoot></table></div></div></div></div></div></div></div><footer><script type="text/javascript">function isEmptyOrSpaces(str) {
+    return !str || str.trim() === '';
+}
+function dataTablesCheckCondition(condition, data) {
+    var columnName = condition['columnName'];
+    var reverseCondition = condition['reverseCondition'];
+    var columnId = condition['columnId'];
+    var operator = condition['operator'].toLowerCase();
+    if (condition['dataStore'].toLowerCase() != 'html') {
+        var columnExists = false;
+        // we need to find whether the column name exists or not, and to make sure we know the column name exact case (it's case sensitive) just in case user provided it wrong
+        Object.getOwnPropertyNames(data).forEach(
+            function (val) {
+                if (val.toLowerCase() == columnName.toLowerCase()) {
+                    columnName = val;
+                    columnExists = true;
+                    return
+                }
+            }
+        );
+        if (!columnExists) {
+            return false;
+        }
+        var columnValue = data[columnName];
+    } else {
+        // check if columnid is set - if it's not set it means the column doesn't exists so we dont' proceed
+        if (columnId == -1) {
+            return false;
+        }
+        var columnValue = data[columnId];
+    }
+    var conditionValue = condition['value'];
+
+    //console.log('before: ' + conditionValue + ' || ' + columnValue + ' type: ' + condition['type']);
+    if (condition['type'] == 'bool') {
+        columnValue = columnValue.toString().toLowerCase();
+        conditionValue = conditionValue.toString().toLowerCase();
+    } else if (condition['type'] == 'string') {
+        if (!condition['caseSensitive']) {
+            columnValue = columnValue.toString().toLowerCase();
+            conditionValue = conditionValue.toString().toLowerCase();
+        }
+    } else if (condition['type'] == 'number') {
+        if (Array.isArray(conditionValue)) {
+            // this will be used for between, betweenInclusive
+            // if its an array we need to make sure to convert conditionValue within an array
+            var conditionValueTemporary = [];
+
+            for (var i = 0; i < conditionValue.length; i++) {
+                //for (let value of conditionValue) {
+                if (!isEmptyOrSpaces(conditionValue[i].toString())) {
+                    conditionValueTemporary.push(Number(conditionValue[i]));
+                } else {
+                    conditionValueTemporary.push(undefined);
+                }
+            }
+            conditionValue = conditionValueTemporary;
+            if (!isEmptyOrSpaces(columnValue.toString())) {
+                columnValue = Number(columnValue);
+            } else {
+                columnValue = undefined;
+            }
+        } else {
+            // This logic is to get rid of empty string which is normally treated as 0
+            if (!isEmptyOrSpaces(conditionValue.toString())) {
+                conditionValue = Number(conditionValue);
+            } else {
+                conditionValue = undefined;
+            }
+            if (!isEmptyOrSpaces(columnValue.toString())) {
+                columnValue = Number(columnValue);
+            } else {
+                columnValue = undefined;
+            }
+        }
+    } else if (condition['type'] == 'date') {
+        if (Array.isArray(condition['valueDate'])) {
+            var conditionValueTemporary = [];
+            for (var i = 0; i < condition['valueDate'].length; i++) {
+                //for (let value of condition['valueDate']) {
+                var valueDate = condition['valueDate'][i];
+                conditionValueTemporary.push(new Date(valueDate.year, valueDate.month - 1, valueDate.day, valueDate.hours, valueDate.minutes, valueDate.seconds));
+            }
+            conditionValue = conditionValueTemporary;
+        } else {
+            // bring conditionValue to proper date
+            var valueDate = condition['valueDate'];
+            conditionValue = new Date(valueDate.year, valueDate.month - 1, valueDate.day, valueDate.hours, valueDate.minutes, valueDate.seconds);
+        }
+        // bring columnValue based on dateTimeFormat provided
+        var momentConversion = moment(columnValue, condition['dateTimeFormat']);
+        columnValue = new Date(momentConversion);
+    }
+
+    if (reverseCondition) {
+        var sideLeft = conditionValue;
+        var sideRight = columnValue;
+    } else {
+        var sideLeft = columnValue;
+        var sideRight = conditionValue;
+    }
+    //console.log('after: ' + conditionValue + ' || ' + columnValue);
+    if (operator == 'eq') {
+        if (sideLeft == sideRight) {
+            return true;
+        }
+    } else if (operator == 'ne') {
+        if (sideLeft != sideRight) {
+            return true;
+        }
+    } else if (operator == 'gt') {
+        if (sideLeft > sideRight) {
+            return true;
+        }
+    } else if (operator == 'lt') {
+        if (sideLeft < sideRight) {
+            return true;
+        }
+    } else if (operator == 'le') {
+        if (sideLeft <= sideRight) {
+            return true;
+        }
+    } else if (operator == 'ge') {
+        if (sideLeft >= sideRight) {
+            return true;
+        }
+    } else if (operator == 'in') {
+        if (sideRight.indexOf(sideLeft) != -1) {
+            return true;
+        }
+    } else if (operator == 'notin') {
+        if (sideRight.indexOf(sideLeft) == -1) {
+            return true;
+        }
+    } else if (operator == 'contains' || operator == 'like') {
+        //var compareValue = conditionValue.replace('*', '.*')
+        var regex = new RegExp(sideRight);
+        if (regex.test(sideLeft)) {
+            return true;
+        }
+    } else if (operator == 'notcontains' || operator == 'notlike') {
+        //var compareValue = conditionValue.replace('*', '.*')
+        var regex = new RegExp(sideRight)
+        if (!regex.test(sideLeft)) {
+            return true;
+        }
+    } else if (operator == 'betweeninclusive') {
+        if (Array.isArray(sideRight) && sideLeft >= sideRight[0] && sideLeft <= sideRight[1]) {
+            return true;
+        }
+    } else if (operator == 'between') {
+        if (Array.isArray(sideRight) && sideLeft > sideRight[0] && sideLeft < sideRight[1]) {
+            return true;
+        }
+    }
+    return false;
+}
+function dataTablesConditionalFormatting(row, data, conditionsContainer, highlightColumn, css, failCss) {
+    var conditionsMatch = [];
+    var found = false;
+    for (var i = 0; i < conditionsContainer.length; i++) {
+        var container = conditionsContainer[i];
+        for (var k = 0; k < container['conditions'].length; k++) {
+            var condition = container['conditions'][k];
+            conditionsMatch.push(
+                dataTablesCheckCondition(condition, data)
+            );
+        }
+        if (container['logic'] == 'AND') {
+            // if (conditionsMatch.every(value => value === true)) {
+            //     found = true;
+            // }
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] !== true) {
+                    found = false;
+                    break;
+                } else {
+                    found = true;
+                }
+            }
+
+
+        } else if (container['logic'] == 'OR') {
+            //if (conditionsMatch.some(value => value === true)) {
+            //    found = true;
+            //}
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] === true) {
+                    found = true;
+                    break;
+                }
+            }
+
+        } else if (container['logic'] == 'NONE') {
+            // if (conditionsMatch.every(value => value != true)) {
+            //    found = true;
+            //}
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] !== false) {
+                    found = false;
+                    break;
+                } else {
+                    found = true;
+                }
+            }
+        }
+    }
+    if (found) {
+        if (highlightColumn == null) {
+            $('td', row).css(css);
+        } else {
+            for (var a = 0; a < highlightColumn.length; a++) {
+                var column = highlightColumn[a];
+                //for (let column of highlightColumn) {
+                $("td:eq(" + column + ")", row).css(css);
+
+                //if (data.Type == "group") {
+                //    $('td:eq(6)', row).html('<b>A</b>');
+                //}
+            }
+        }
+    } else {
+        if (failCss) {
+            if (highlightColumn == null) {
+                $('td', row).css(failCss);
+            } else {
+                for (var a = 0; a < highlightColumn.length; a++) {
+                    var column = highlightColumn[a];
+                    //for (let column of highlightColumn) {
+                    $("td:eq(" + column + ")", row).css(failCss);
+                }
+            }
+        }
+    }
+}</script> <script type="text/javascript">var tabbis = (function () {
+    var fn = {};
+
+    var data;
+    var types = ['tab', 'pane'];
+    var type;
+    var groups = [];
+    var activeGroups = [];
+    var activeChildren = [];
+    var activeItems = [];
+    var indexGroup;
+    var indexItem;
+    var memory = [];
+
+    fn.init = function (options) {
+        data = options;
+        fn.setDefaults();
+        fn.setMemory();
+
+        groups['tab'] = document.querySelectorAll(data.tabGroup);
+        groups['pane'] = document.querySelectorAll(data.paneGroup);
+
+        for (var groupIndex = 0; groupIndex < groups['tab'].length; groupIndex++) {
+            var tabItems = groups['tab'][groupIndex].children;
+
+            for (var itemIndex = 0; itemIndex < tabItems.length; itemIndex++) {
+                tabItems[itemIndex].addEventListener('click', fn.onClick.bind(this, groupIndex, itemIndex), false);
+
+                indexGroup = groupIndex;
+                indexItem = itemIndex;
+
+                if (!fn.hasMemory()) continue;
+                fn.setNodes(groupIndex, itemIndex);
+            }
+        }
+    };
+
+    fn.onClick = function (groupIndex, itemIndex) {
+        fn.setNodes(groupIndex, itemIndex);
+        fn.setCallback(indexGroup, indexItem);
+    };
+
+    fn.setNodes = function (groupIndex, itemIndex) {
+        indexGroup = groupIndex;
+        indexItem = itemIndex;
+
+        for (var i = 0; i < types.length; i++) {
+            type = types[i];
+
+            fn.setActiveGroup();
+            fn.setActiveChildren();
+            fn.setActiveItems();
+            fn.putActiveClass();
+        }
+
+        memory[groupIndex] = [];
+        memory[groupIndex][itemIndex] = true;
+
+        try {
+            localStorage.setItem('tabbis', JSON.stringify(memory));
+        } catch (e) {
+            console.log('Tabs local storage failed. Most likely IE in use.')
+        }
+    };
+
+    //fn.hasMemory = function () {
+    //    if (typeof memory === 'undefined') return;
+    //    if (typeof memory[indexGroup] === 'undefined') return;
+    //    if (typeof memory[indexGroup][indexItem] === 'undefined') return;
+    //    if (memory[indexGroup][indexItem] !== true) return;
+    //    return true;
+    //};
+
+    fn.hasMemory = function () {
+        // https://stackoverflow.com/questions/41902495/javascript-multidimensional-array-is-valid
+
+        if (typeof memory === 'undefined') return;
+        if (typeof memory[indexGroup] === 'undefined') return;
+        if (memory[indexGroup] === null) return;
+        if (typeof memory[indexGroup][indexItem] === 'undefined') return;
+        if (memory[indexGroup][indexItem] === null) return;
+        if (memory[indexGroup][indexItem] !== true) return;
+        return true;
+    };
+
+    fn.setMemory = function () {
+        try {
+            if (localStorage.getItem('tabbis') === null) return;
+            if (localStorage.getItem('tabbis').length == 0) return;
+
+            memory = Object.values(JSON.parse(localStorage.getItem('tabbis')));
+        } catch (e) {
+            console.log('Tabs local storage failed. Most likely IE in use.')
+        }
+    };
+
+    fn.putActiveClass = function () {
+        for (var i = 0; i < activeChildren[type].length; i++) {
+            activeChildren[type][i].classList.remove(data[type + 'Active']);
+        }
+
+        activeItems[type].classList.add(data[type + 'Active']);
+    };
+
+    fn.setDefaults = function () {
+        for (var i = 0; i < types.length; i++) {
+            type = types[i];
+
+            fn.setOption(type + 'Group', '[data-' + type + 's]');
+            fn.setOption(type + 'Active', 'active');
+        }
+    };
+
+    fn.setOption = function (key, value) {
+        data = data || [];
+        data[key] = data[key] || value;
+    };
+
+    fn.setActiveGroup = function () {
+        activeGroups[type] = groups[type][indexGroup];
+    };
+
+    fn.setActiveChildren = function () {
+        activeChildren[type] = activeGroups[type].children;
+    };
+
+    fn.setActiveItems = function () {
+        activeItems[type] = activeChildren[type][indexItem];
+    };
+
+    fn.setCallback = function () {
+        if (typeof data.callback === "function") {
+            data.callback(activeItems.tab, activeItems.pane);
+        }
+    };
+
+    fn.reset = function () {
+        for (var groupIndex = 0; groupIndex < groups['tab'].length; groupIndex++) {
+            tabItems = groups['tab'][groupIndex].children;
+            paneItems = groups['pane'][groupIndex].children;
+
+            for (var itemIndex = 0; itemIndex < tabItems.length; itemIndex++) {
+                tabItems[itemIndex].classList.remove(data['tabActive']);
+                paneItems[itemIndex].classList.remove(data['paneActive']);
+            }
+        }
+        localStorage.removeItem('tabbis');
+    };
+
+    return fn;
+})();</script> <script type="text/javascript">var tabs = tabbis.init({
+    tabGroup: "[data-tabs]",
+    paneGroup: "[data-panes]",
+    tabActive: "active",
+    paneActive: "active",
+    callback: function (tab, pane) {
+        // console.log("TAB id:" + tab.id + pane.id + tableid);
+        // this makes sure to refresh tables on given tab change to make sure they have buttons and everything
+        // which tab has which table
+        findObjectsToRedraw(tab.id + "-Content");
+    }
+});
+
+// in theory should take care of removing local storage for tabbis
+// some errors occurs if the local storage is not cleaned after a while
+window.addEventListener("unload", tabbis.remove, false);
+</script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/evotecit/cdn@0.0.17/JS/redrawObjects.min.js"></script></footer></body></html>
