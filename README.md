@@ -1,6 +1,7 @@
 # ADhealth
 ActiveDirectoryHealthCheck
 
+<img src="https://github.com/dakhama-mehdi/ADhealth/blob/main/Logo/ADHealthCheck.png?raw=true" alt="Logo_github" width="300" height="200">
 
 # AD Health Check
 
