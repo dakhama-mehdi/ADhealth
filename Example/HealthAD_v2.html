@@ -1,0 +1,4564 @@
+﻿<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="2025-05-26 23:03:24" name="revised"><title></title><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" as="style" type="text/css" rel="stylesheet preload prefetch"/><script comment="jquery" type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script><link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><link href="https://cdn.datatables.net/select/1.7.0/css/select.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.13.5/sorting/datetime-moment.js"></script><link href="https://cdn.datatables.net/buttons/2.4.0/css/buttons.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.0/js/dataTables.buttons.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.0/js/buttons.html5.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script><link href="https://cdn.datatables.net/datetime/1.5.0/css/dataTables.dateTime.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/datetime/1.5.0/js/dataTables.dateTime.min.js"></script><link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script><link href="https://cdn.datatables.net/searchbuilder/1.5.0/css/searchBuilder.dataTables.min.css" as="style" type="text/css" rel="stylesheet preload prefetch"/><script type="text/javascript" src="https://cdn.datatables.net/searchbuilder/1.5.0/js/dataTables.searchBuilder.min.js"></script><style type="text/css">body {    font-family: 'Roboto Condensed', sans-serif;    font-size: 8pt;    margin: 0px;}input {    font-size: 8pt;}.main-section {    margin-top: 0px;}</style><style type="text/css">td:first-child {    white-space: nowrap;}thead input {    width: 100%;    box-sizing: border-box;    padding: -3px;}td::before, td.sorting_1::before {    color: #007bff !important;}tfoot input {    width: 100%;    box-sizing: border-box;    padding: -3px;}div.dataTables_wrapper {    margin: 5px;}</style><noscript><style type="text/css">table {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+table td {
+    border-width: 1px;
+    padding: 4px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+table thead th {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 17px;
+    border-bottom: 1px solid #111;
+    background-color: white;
+    color: black;
+}
+
+table tfoot th {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 17px;
+    border-top: 1px solid #111;
+    background-color: white;
+    color: black;
+}
+
+table tr:nth-of-type(odd) {
+    background-color: #F6F6F5;
+}
+
+table tr:nth-of-type(even) {
+    background-color: white;
+}
+
+table td, table th {
+    border: 1px solid black;
+}</style></noscript><style type="text/css">div.dt-button-collection {    position: relative;    margin-top: 10px !important;    width: auto !important;    margin-bottom: 10px !important;}</style><style type="text/css">.logo {    margin: 5px;}</style><style type="text/css">.defaultPanel {    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    transition: 0.3s;    border-radius: 5px;    margin: 5px;}</style><style type="text/css">.defaultSection {    flex-direction: column;    border: 1px solid #bbbbbb;    padding-bottom: 0px;    margin: 5px;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    transition: 0.3s;    border-radius: 5px;}.defaultSectionHead {    display: flex;    justify-content: center;    padding: 5px;    margin: 0px 0px 0px 0px;    font-weight: bold;    background-color: #00bfff;    color: #ffffff;}</style><style type="text/css">.defaultText {    margin: 5px;}</style><style type="text/css">.overflowHidden {    overflow: hidden;    overflow-x: hidden;    overflow-y: hidden;}.flexParent {    display: flex;    justify-content: space-between;}.flexParentInvisible {    display: flex;    justify-content: space-between;}.flexElement {    flex-basis: 100%;    max-width: 100%;}.flexPanel {    flex-basis: 100%;    max-width: 100%;}.flex-grid {    display: flex;}</style><style type="text/css">.tabsWrapper {    text-align: center;    font-family: 'Roboto', sans-serif !important;    text-transform: uppercase;}[data-tabs] {    display: flex;    margin: 5px 5px 5px 5px;    padding: 0px;    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);    border-radius: 5px;    justify-content: center;    flex-wrap: wrap;}[data-tabs]>* {    cursor: pointer;    padding: 10px 20px;    flex-grow: 1;    flex-shrink: 1;    flex-basis: auto;}[data-tabs] .active {    background: #008080;    color: #fff;    border-radius: 5px;}[data-panes]>* {    display: none;}[data-panes]>.active {    display: block;}</style><style>
+.defaultPanelXzpUrUDy {
+    flex-basis: 90%;
+}
+</style></head><body><div class="main-section"><header><div class="defaultText"></div><br/><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><div id="anchor-7tmd2f3" class="flexPanel overflowHidden "><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;color:#0000ff;font-size:30px">AD Health : info.lab</span></div></div><div class="defaultText"><div Align="left"><span style="text-align:left;font-size:15px">Report date: 05/26/2025 22:43:02</span></div></div></div><div style="text-align:right" id="anchor-owedhvy" class="flexPanel overflowHidden "><div class="otehr"><a target="_blank"><img src="https://github.com/dakhama-mehdi/ADhealth/blob/main/Logo/ADHealthCheck.png?raw=true" height="80px"></img></a></div></div></div></div><div class="defaultText"></div><br/></header><div class="tabsWrapper"><div class="tabsSlimmer"><div data-tabs="true"><div id="Tab-higbcxry" class="active"><span>AD Health</span></div><div id="Tab-4hcm60b8"><span>System State</span></div><div id="Tab-av8mqou2"><span>AD roles</span></div><div id="Tab-vdastxm1"><span>Inventory</span></div></div></div></div><div data-panes="true"><div id="Tab-higbcxry-Content" class="active"><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-CIOCGcTP').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  false,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  false,
+    "procesing":  true,
+    "select":  false,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "ServerName":  "DC-1",
+        "Connectivity":  "Pass",
+        "Advertising":  "Pass",
+        "FrsEvent":  "Pass",
+        "DFSREvent":  "Pass",
+        "SysVolCheck":  "Pass",
+        "KccEvent":  "Pass",
+        "RoleHolders":  "Pass",
+        "MachineAccount":  "Pass",
+        "NCSecDesc":  "Pass",
+        "NetLogons":  "Pass",
+        "ObjectsReplicated":  "Pass",
+        "Replications":  "Fail",
+        "RidManager":  "Pass",
+        "Services":  "Pass",
+        "SystemLog":  "Fail",
+        "VerifyReferences":  "Pass"
+    },
+    {
+        "ServerName":  "DC-2",
+        "Connectivity":  "Pass",
+        "Advertising":  "Pass",
+        "FrsEvent":  "Pass",
+        "DFSREvent":  "Pass",
+        "SysVolCheck":  "Pass",
+        "KccEvent":  "Pass",
+        "RoleHolders":  "Fail",
+        "MachineAccount":  "Pass",
+        "NCSecDesc":  "Pass",
+        "NetLogons":  "Pass",
+        "ObjectsReplicated":  "Pass",
+        "Replications":  "Fail",
+        "RidManager":  "Fail",
+        "Services":  "Pass",
+        "SystemLog":  "Fail",
+        "VerifyReferences":  "Pass"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "ServerName"
+                    },
+                    {
+                        "data":  "Connectivity"
+                    },
+                    {
+                        "data":  "Advertising"
+                    },
+                    {
+                        "data":  "FrsEvent"
+                    },
+                    {
+                        "data":  "DFSREvent"
+                    },
+                    {
+                        "data":  "SysVolCheck"
+                    },
+                    {
+                        "data":  "KccEvent"
+                    },
+                    {
+                        "data":  "RoleHolders"
+                    },
+                    {
+                        "data":  "MachineAccount"
+                    },
+                    {
+                        "data":  "NCSecDesc"
+                    },
+                    {
+                        "data":  "NetLogons"
+                    },
+                    {
+                        "data":  "ObjectsReplicated"
+                    },
+                    {
+                        "data":  "Replications"
+                    },
+                    {
+                        "data":  "RidManager"
+                    },
+                    {
+                        "data":  "Services"
+                    },
+                    {
+                        "data":  "SystemLog"
+                    },
+                    {
+                        "data":  "VerifyReferences"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   },
+    "rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Connectivity",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Connectivity",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Advertising",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Advertising",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"FrsEvent",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"FrsEvent",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSREvent",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSREvent",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SysVolCheck",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SysVolCheck",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KccEvent",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KccEvent",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RoleHolders",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RoleHolders",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"MachineAccount",
+"columnId":8,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [8], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"MachineAccount",
+"columnId":8,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [8], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NCSecDesc",
+"columnId":9,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [9], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NCSecDesc",
+"columnId":9,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [9], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogons",
+"columnId":10,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [10], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogons",
+"columnId":10,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [10], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ObjectsReplicated",
+"columnId":11,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [11], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ObjectsReplicated",
+"columnId":11,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [11], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Replications",
+"columnId":12,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [12], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Replications",
+"columnId":12,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [12], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RidManager",
+"columnId":13,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [13], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RidManager",
+"columnId":13,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [13], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Services",
+"columnId":14,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [14], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Services",
+"columnId":14,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [14], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SystemLog",
+"columnId":15,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [15], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"SystemLog",
+"columnId":15,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [15], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"VerifyReferences",
+"columnId":16,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [16], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#ff0000",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"VerifyReferences",
+"columnId":16,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [16], css, failCss); }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-CIOCGcTP" class="dataTables row-border"><thead><tr><th>ServerName</th><th>Connectivity</th><th>Advertising</th><th>FrsEvent</th><th>DFSREvent</th><th>SysVolCheck</th><th>KccEvent</th><th>RoleHolders</th><th>MachineAccount</th><th>NCSecDesc</th><th>NetLogons</th><th>ObjectsReplicated</th><th>Replications</th><th>RidManager</th><th>Services</th><th>SystemLog</th><th>VerifyReferences</th></tr></thead></table></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Replication and Backup Check">Replication and Backup Check </a>&nbsp;<a id="show_anchor-lo9jtb0" href="javascript:void(0)" onclick="show('anchor-lo9jtb0'); " style="display:none">(Show)</a><a id="hide_anchor-lo9jtb0" href="javascript:void(0)" onclick="hide('anchor-lo9jtb0'); " style="display:none">(Hide)</a></div></div><div name="anchor-lo9jtb0" id="anchor-lo9jtb0" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-lo9jtb0" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><div id="anchor-efioub1" class="flexPanel overflowHidden defaultPanelXzpUrUDy"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-OyUGcrqU').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  false,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  false,
+    "procesing":  true,
+    "select":  false,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "Name":  "DC-1",
+        "Type_de_sauvegarde":  "WindowsBackup",
+        "Etat":  "Sucess",
+        "Début":  "2/25/2025 10:19:20 PM",
+        "Fin":  "8/11/2022 12:04:28 PM",
+        "Duree":  "-133 Weeks, -5 Days, -10 Hours, -14 Minutes"
+    },
+    {
+        "Name":  "DC-1",
+        "Type_de_sauvegarde":  "WindowsBackup",
+        "Etat":  "Sucess",
+        "Début":  "2/25/2025 10:19:20 PM",
+        "Fin":  "8/11/2022 12:04:28 PM",
+        "Duree":  "-133 Weeks, -5 Days, -10 Hours, -14 Minutes"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "Name"
+                    },
+                    {
+                        "data":  "Type_de_sauvegarde"
+                    },
+                    {
+                        "data":  "Etat"
+                    },
+                    {
+                        "data":  "Début"
+                    },
+                    {
+                        "data":  "Fin"
+                    },
+                    {
+                        "data":  "Duree"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   },
+    "rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Etat",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Sucess",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, null, css, failCss);     var css = {
+    "color":  "#000000",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Name",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":" ",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss); }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-OyUGcrqU" class="dataTables row-border"><thead><tr><th>Name</th><th>Type_de_sauvegarde</th><th>Etat</th><th>Début</th><th>Fin</th><th>Duree</th></tr></thead><tfoot><tr><th>Name</th><th>Type_de_sauvegarde</th><th>Etat</th><th>Début</th><th>Fin</th><th>Duree</th></tr></tfoot></table></div></div><div id="anchor-0k8zi3q" class="flexPanel overflowHidden defaultPanel"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-zAMZOERd').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "DSAType":  "Source",
+        "Hostname":  "DC-1",
+        "Delta":  "06m:41s",
+        "Fails":  "0",
+        "Total":  "5",
+        "PctError":  "0",
+        "ErrorMsg":  ""
+    },
+    {
+        "DSAType":  "Source",
+        "Hostname":  "DC-2",
+        "Delta":  "14m:26s",
+        "Fails":  "0",
+        "Total":  "5",
+        "PctError":  "0",
+        "ErrorMsg":  ""
+    },
+    {
+        "DSAType":  "Destination",
+        "Hostname":  "DC-1",
+        "Delta":  "14m:27s",
+        "Fails":  "0",
+        "Total":  "5",
+        "PctError":  "0",
+        "ErrorMsg":  ""
+    },
+    {
+        "DSAType":  "Destination",
+        "Hostname":  "DC-2",
+        "Delta":  "06m:42s",
+        "Fails":  "0",
+        "Total":  "5",
+        "PctError":  "0",
+        "ErrorMsg":  ""
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "DSAType"
+                    },
+                    {
+                        "data":  "Hostname"
+                    },
+                    {
+                        "data":  "Delta"
+                    },
+                    {
+                        "data":  "Fails"
+                    },
+                    {
+                        "data":  "Total"
+                    },
+                    {
+                        "data":  "PctError"
+                    },
+                    {
+                        "data":  "ErrorMsg"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-zAMZOERd" class="dataTables display compact"><thead><tr><th>DSAType</th><th>Hostname</th><th>Delta</th><th>Fails</th><th>Total</th><th>PctError</th><th>ErrorMsg</th></tr></thead><tfoot><tr><th>DSAType</th><th>Hostname</th><th>Delta</th><th>Fails</th><th>Total</th><th>PctError</th><th>ErrorMsg</th></tr></tfoot></table></div></div><div id="anchor-zpdnihe" class="flexPanel overflowHidden defaultPanel"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead"><div class="defaultSectionText"><a name="Test DNS">Test DNS </a>&nbsp;<a id="show_anchor-njte5sg" href="javascript:void(0)" onclick="show('anchor-njte5sg'); " style="display:none">(Show)</a><a id="hide_anchor-njte5sg" href="javascript:void(0)" onclick="hide('anchor-njte5sg'); " style="display:none">(Hide)</a></div></div><div name="anchor-njte5sg" id="anchor-njte5sg" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-njte5sg" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-NZLydkys').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  false,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  false,
+    "procesing":  true,
+    "select":  false,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "Server":  "DC-2",
+        "Auth":  "PASS",
+        "Basc":  "PASS",
+        "Forw":  "PASS",
+        "Del":  "PASS",
+        "Dyn":  "PASS",
+        "RReg":  "PASS",
+        "Ext":  "n/a"
+    },
+    {
+        "Server":  "DC-1",
+        "Auth":  "PASS",
+        "Basc":  "PASS",
+        "Forw":  "PASS",
+        "Del":  "PASS",
+        "Dyn":  "PASS",
+        "RReg":  "PASS",
+        "Ext":  "n/a"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "Server"
+                    },
+                    {
+                        "data":  "Auth"
+                    },
+                    {
+                        "data":  "Basc"
+                    },
+                    {
+                        "data":  "Forw"
+                    },
+                    {
+                        "data":  "Del"
+                    },
+                    {
+                        "data":  "Dyn"
+                    },
+                    {
+                        "data":  "RReg"
+                    },
+                    {
+                        "data":  "Ext"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   },
+    "rowCallback": function (row, data) {     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Server",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Auth",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Basc",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Forw",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Del",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Dyn",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"RReg",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#20b2aa",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Pass",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#f28e1c",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Fail",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"n/a",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#922b3e",
+    "font-weight":  "600"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Ext",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Warn",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss); }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-NZLydkys" class="dataTables row-border"><thead><tr><th>Server</th><th>Auth</th><th>Basc</th><th>Forw</th><th>Del</th><th>Dyn</th><th>RReg</th><th>Ext</th></tr></thead><tfoot><tr><th>Server</th><th>Auth</th><th>Basc</th><th>Forw</th><th>Del</th><th>Dyn</th><th>RReg</th><th>Ext</th></tr></tfoot></table></div></div></div></div></div></div></div></div></div><div id="Tab-4hcm60b8-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="AD Mode">AD Mode </a>&nbsp;<a id="show_anchor-wmet8hu" href="javascript:void(0)" onclick="show('anchor-wmet8hu'); " style="display:none">(Show)</a><a id="hide_anchor-wmet8hu" href="javascript:void(0)" onclick="hide('anchor-wmet8hu'); " style="display:none">(Hide)</a></div></div><div name="anchor-wmet8hu" id="anchor-wmet8hu" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-wmet8hu" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><div style="background-color:#afeeee;border-radius:10px;text-align:right" id="anchor-n8skf2e" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Forest : info.lab</span></div></div></span></div></div><div style="background-color:#ffe4c4;border-radius:10px;text-align:right" id="anchor-x94mute" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Mode : Windows2016Forest </span></div></div></span></div></div><div style="background-color:#afeeee;border-radius:10px;text-align:right" id="anchor-eylu1gv" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Domain : info</span></div></div></span></div></div><div style="background-color:#ffe4c4;border-radius:10px;text-align:right" id="anchor-dwcb45r" class="flexPanel overflowHidden defaultPanel"><div class="defaultText"><span><div class="defaultText"><div Align="left"><span style="font-weight:bold;text-align:left;font-size:15px">Mode : Windows2016Domain </span></div></div></span></div></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="DC infos">DC infos </a>&nbsp;<a id="show_anchor-dxvztoj" href="javascript:void(0)" onclick="show('anchor-dxvztoj'); " style="display:none">(Show)</a><a id="hide_anchor-dxvztoj" href="javascript:void(0)" onclick="hide('anchor-dxvztoj'); " style="display:none">(Hide)</a></div></div><div name="anchor-dxvztoj" id="anchor-dxvztoj" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-dxvztoj" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-RxEcMRmv').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "ServerName":  "DC-1",
+        "roles":  "SC-MN-P-R-I",
+        "Domain":  "info.lab",
+        "OS":  "2019 Datacenter",
+        "Site":  "Site-Local",
+        "Marque":  "Microsoft Corporation",
+        "Model":  "Virtual Machine",
+        "GC":  "True",
+        "RODC":  "False",
+        "IP4":  "192.168.10.10",
+        "FW Mode":  "domain",
+        "FW State":  "True"
+    },
+    {
+        "ServerName":  "DC-2",
+        "roles":  "None",
+        "Domain":  "info.lab",
+        "OS":  "2022 Standard",
+        "Site":  "Site-Local",
+        "Marque":  "Microsoft Corporation",
+        "Model":  "Virtual Machine",
+        "GC":  "True",
+        "RODC":  "False",
+        "IP4":  "192.168.10.12",
+        "FW Mode":  "domain",
+        "FW State":  "True"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "ServerName"
+                    },
+                    {
+                        "data":  "roles"
+                    },
+                    {
+                        "data":  "Domain"
+                    },
+                    {
+                        "data":  "OS"
+                    },
+                    {
+                        "data":  "Site"
+                    },
+                    {
+                        "data":  "Marque"
+                    },
+                    {
+                        "data":  "Model"
+                    },
+                    {
+                        "data":  "GC"
+                    },
+                    {
+                        "data":  "RODC"
+                    },
+                    {
+                        "data":  "IP4"
+                    },
+                    {
+                        "data":  "FW Mode"
+                    },
+                    {
+                        "data":  "FW State"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+                    {
+                        "extend":  "copyHtml5"
+                    },
+                    {
+                        "extend":  "excelHtml5",
+                        "exportOptions":  {
+                                              "format":      {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }
+                                          }
+                    },
+                    {
+                        "extend":  "csvHtml5",
+                        "text":  "CSV",
+                        "charset":  "utf-8",
+                        "extension":  ".csv",
+                        "fieldSeparator":  ";",
+                        "bom":  true
+                    },
+                    {
+                        "extend":  "pdfHtml5",
+                        "pageSize":  "A3",
+                        "orientation":  "landscape"
+                    },
+                    {
+                        "extend":  "searchBuilder"
+                    }
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-RxEcMRmv" class="dataTables display compact"><thead><tr><th>ServerName</th><th>roles</th><th>Domain</th><th>OS</th><th>Site</th><th>Marque</th><th>Model</th><th>GC</th><th>RODC</th><th>IP4</th><th>FW Mode</th><th>FW State</th></tr></thead></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="System stats">System stats </a>&nbsp;<a id="show_anchor-p5bd64a" href="javascript:void(0)" onclick="show('anchor-p5bd64a'); " style="display:none">(Show)</a><a id="hide_anchor-p5bd64a" href="javascript:void(0)" onclick="hide('anchor-p5bd64a'); " style="display:none">(Hide)</a></div></div><div name="anchor-p5bd64a" id="anchor-p5bd64a" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-p5bd64a" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-IuWgExcT').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "ServerName":  "DC-1",
+        "UpTime":  "6 Days, 10 Hours, 51 Minutes",
+        "BootUpTime":  "20-05-2025",
+        "C: Free Space":  "20.67 GB",
+        "Memory Usage":  "81.92 %",
+        "Physical RAM":  "1 GB",
+        "CPU Usage":  "51 %",
+        "IPForwarder":  "8.8.8.8"
+    },
+    {
+        "ServerName":  "DC-2",
+        "UpTime":  "10 Hours, 52 Minutes",
+        "BootUpTime":  "26-05-2025",
+        "C: Free Space":  "45.33 GB",
+        "Memory Usage":  "75.20 %",
+        "Physical RAM":  "0.98 GB",
+        "CPU Usage":  "1 %",
+        "IPForwarder":  "8.8.8.8"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "ServerName"
+                    },
+                    {
+                        "data":  "UpTime"
+                    },
+                    {
+                        "data":  "BootUpTime"
+                    },
+                    {
+                        "data":  "C: Free Space"
+                    },
+                    {
+                        "data":  "Memory Usage"
+                    },
+                    {
+                        "data":  "Physical RAM"
+                    },
+                    {
+                        "data":  "CPU Usage"
+                    },
+                    {
+                        "data":  "IPForwarder"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+                    {
+                        "extend":  "copyHtml5"
+                    },
+                    {
+                        "extend":  "excelHtml5",
+                        "exportOptions":  {
+                                              "format":      {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }
+                                          }
+                    },
+                    {
+                        "extend":  "csvHtml5",
+                        "text":  "CSV",
+                        "charset":  "utf-8",
+                        "extension":  ".csv",
+                        "fieldSeparator":  ";",
+                        "bom":  true
+                    },
+                    {
+                        "extend":  "pdfHtml5",
+                        "pageSize":  "A3",
+                        "orientation":  "landscape"
+                    },
+                    {
+                        "extend":  "searchBuilder"
+                    }
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-IuWgExcT" class="dataTables display compact"><thead><tr><th>ServerName</th><th>UpTime</th><th>BootUpTime</th><th>C: Free Space</th><th>Memory Usage</th><th>Physical RAM</th><th>CPU Usage</th><th>IPForwarder</th></tr></thead></table></div></div></div></div></div><div id="Tab-av8mqou2-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Services">Services </a>&nbsp;<a id="show_anchor-489asq1" href="javascript:void(0)" onclick="show('anchor-489asq1'); " style="display:none">(Show)</a><a id="hide_anchor-489asq1" href="javascript:void(0)" onclick="hide('anchor-489asq1'); " style="display:none">(Hide)</a></div></div><div name="anchor-489asq1" id="anchor-489asq1" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-489asq1" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-xjGzRwtK').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  false,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  false,
+    "procesing":  false,
+    "select":  true,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "ServerName":  "DC-1",
+        "ADWS":  "Running",
+        "NTDS":  "Running",
+        "NetLogon":  "Running",
+        "DFSR":  "Running",
+        "KDC":  "Running",
+        "DNS":  "Running",
+        "Eventlog":  "Running"
+    },
+    {
+        "ServerName":  "DC-2",
+        "ADWS":  "Running",
+        "NTDS":  "Running",
+        "NetLogon":  "Running",
+        "DFSR":  "Running",
+        "KDC":  "Running",
+        "DNS":  "Running",
+        "Eventlog":  "Running"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "ServerName"
+                    },
+                    {
+                        "data":  "ADWS"
+                    },
+                    {
+                        "data":  "NTDS"
+                    },
+                    {
+                        "data":  "NetLogon"
+                    },
+                    {
+                        "data":  "DFSR"
+                    },
+                    {
+                        "data":  "KDC"
+                    },
+                    {
+                        "data":  "DNS"
+                    },
+                    {
+                        "data":  "Eventlog"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   },
+    "rowCallback": function (row, data) {     var css = {
+    "color":  "#000000",
+    "background-color":  "#ffffff",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#d3d3d3",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ServerName",
+"columnId":0,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [0], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ADWS",
+"columnId":1,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"ADWS",
+"columnId":1,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [1], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NTDS",
+"columnId":2,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NTDS",
+"columnId":2,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [2], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogon",
+"columnId":3,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"NetLogon",
+"columnId":3,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [3], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSR",
+"columnId":4,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DFSR",
+"columnId":4,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [4], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KDC",
+"columnId":5,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"KDC",
+"columnId":5,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [5], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DNS",
+"columnId":6,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"DNS",
+"columnId":6,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [6], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Eventlog",
+"columnId":7,
+"operator":"eq",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss);     var css = {
+    "color":  "#ffffff",
+    "background-color":  "#008000",
+    "font-weight":  "500"
+};     var failCss = undefined;     var conditionsContainer = [{
+"logic":"AND",
+"conditions":[{
+"columnName":"Eventlog",
+"columnId":7,
+"operator":"ne",
+"type":"string",
+"value":"Running",
+"valueDate":"",
+"dataStore":"JavaScript",
+"caseSensitive":false,
+"dateTimeFormat":"",
+"reverseCondition":false}]}];     dataTablesConditionalFormatting(row, data, conditionsContainer, [7], css, failCss); }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-xjGzRwtK" class="dataTables display compact"><thead><tr><th>ServerName</th><th>ADWS</th><th>NTDS</th><th>NetLogon</th><th>DFSR</th><th>KDC</th><th>DNS</th><th>Eventlog</th></tr></thead></table></div></div></div></div><div class="flexParentInvisible flexElement overflowHidden defaultSectionContentInvisible" style="flex-basis:100%"><div class="flexParent flexElement overflowHidden defaultSectionContentInvisible"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Update">Update </a>&nbsp;<a id="show_anchor-liar0vu" href="javascript:void(0)" onclick="show('anchor-liar0vu'); " style="display:none">(Show)</a><a id="hide_anchor-liar0vu" href="javascript:void(0)" onclick="hide('anchor-liar0vu'); " style="display:none">(Hide)</a></div></div><div name="anchor-liar0vu" id="anchor-liar0vu" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-liar0vu" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-UgoMvocL').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  true,
+    "stateSave":  true,
+    "paging":  true,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "PSComputerName":  "DC-1",
+        "Description":  "Security Update",
+        "HotFixID":  "KB5058392",
+        "InstalledBy":  "AUTORITE NT\\Système",
+        "InstalledOn":  "2025-05-16"
+    },
+    {
+        "PSComputerName":  "DC-1",
+        "Description":  "Security Update",
+        "HotFixID":  "KB5058525",
+        "InstalledBy":  "AUTORITE NT\\Système",
+        "InstalledOn":  "2025-05-16"
+    },
+    {
+        "PSComputerName":  "DC-2",
+        "Description":  "Update",
+        "HotFixID":  "KB5034286",
+        "InstalledBy":  "",
+        "InstalledOn":  "2024-01-04"
+    },
+    {
+        "PSComputerName":  "DC-2",
+        "Description":  "Security Update",
+        "HotFixID":  "KB5034129",
+        "InstalledBy":  "",
+        "InstalledOn":  "2024-01-04"
+    },
+    {
+        "PSComputerName":  "DC-2",
+        "Description":  "Update",
+        "HotFixID":  "KB5033914",
+        "InstalledBy":  "",
+        "InstalledOn":  "2024-01-04"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "PSComputerName"
+                    },
+                    {
+                        "data":  "Description"
+                    },
+                    {
+                        "data":  "HotFixID"
+                    },
+                    {
+                        "data":  "InstalledBy"
+                    },
+                    {
+                        "data":  "InstalledOn"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+                    {
+                        "extend":  "copyHtml5"
+                    },
+                    {
+                        "extend":  "excelHtml5",
+                        "exportOptions":  {
+                                              "format":      {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }
+                                          }
+                    },
+                    {
+                        "extend":  "csvHtml5",
+                        "text":  "CSV",
+                        "charset":  "utf-8",
+                        "extension":  ".csv",
+                        "fieldSeparator":  ";",
+                        "bom":  true
+                    },
+                    {
+                        "extend":  "pdfHtml5",
+                        "pageSize":  "A3",
+                        "orientation":  "landscape"
+                    },
+                    {
+                        "extend":  "pageLength"
+                    },
+                    {
+                        "extend":  "searchBuilder"
+                    }
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-UgoMvocL" class="dataTables display compact"><thead><tr><th>PSComputerName</th><th>Description</th><th>HotFixID</th><th>InstalledBy</th><th>InstalledOn</th></tr></thead></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:70%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Test Partition">Test Partition </a>&nbsp;<a id="show_anchor-sw4mhag" href="javascript:void(0)" onclick="show('anchor-sw4mhag'); " style="display:none">(Show)</a><a id="hide_anchor-sw4mhag" href="javascript:void(0)" onclick="hide('anchor-sw4mhag'); " style="display:none">(Hide)</a></div></div><div name="anchor-sw4mhag" id="anchor-sw4mhag" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-sw4mhag" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-kbUinCqo').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  false,
+    "stateSave":  true,
+    "paging":  false,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "TestName":  "CheckSDRefDom",
+        "ZoneTest":  "ForestDnsZones",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CrossRefValidation",
+        "ZoneTest":  "ForestDnsZones",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CheckSDRefDom",
+        "ZoneTest":  "DomainDnsZones",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CrossRefValidation",
+        "ZoneTest":  "DomainDnsZones",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CheckSDRefDom",
+        "ZoneTest":  "Schema",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CrossRefValidation",
+        "ZoneTest":  "Schema",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CheckSDRefDom",
+        "ZoneTest":  "Configuration",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CrossRefValidation",
+        "ZoneTest":  "Configuration",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CheckSDRefDom",
+        "ZoneTest":  "info",
+        "TestResult":  "Pass"
+    },
+    {
+        "TestName":  "CrossRefValidation",
+        "ZoneTest":  "info",
+        "TestResult":  "Pass"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "TestName"
+                    },
+                    {
+                        "data":  "ZoneTest"
+                    },
+                    {
+                        "data":  "TestResult"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-kbUinCqo" class="dataTables display compact"><thead><tr><th>TestName</th><th>ZoneTest</th><th>TestResult</th></tr></thead><tfoot><tr><th>TestName</th><th>ZoneTest</th><th>TestResult</th></tr></tfoot></table></div></div></div></div></div></div></div><div id="Tab-vdastxm1-Content"><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Roles Installed">Roles Installed </a>&nbsp;<a id="show_anchor-c67nduj" href="javascript:void(0)" onclick="show('anchor-c67nduj'); " style="display:none">(Show)</a><a id="hide_anchor-c67nduj" href="javascript:void(0)" onclick="hide('anchor-c67nduj'); " style="display:none">(Hide)</a></div></div><div name="anchor-c67nduj" id="anchor-c67nduj" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-c67nduj" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-OoKhnblx').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  true,
+    "stateSave":  true,
+    "paging":  true,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "pageLength":  10,
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "ServerName":  "",
+        "Name":  "DHCP",
+        "DisplayName":  "Serveur DHCP",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "DNS",
+        "DisplayName":  "Serveur DNS",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Server",
+        "DisplayName":  "Serveur Web (IIS)",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-WebServer",
+        "DisplayName":  "Serveur Web",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Common-Http",
+        "DisplayName":  "Fonctionnalités HTTP communes",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Static-Content",
+        "DisplayName":  "Contenu statique",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Default-Doc",
+        "DisplayName":  "Document par défaut",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Http-Errors",
+        "DisplayName":  "Erreurs HTTP",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Dir-Browsing",
+        "DisplayName":  "Exploration de répertoire",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Http-Redirect",
+        "DisplayName":  "Redirection HTTP",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Health",
+        "DisplayName":  "Intégrité et diagnostics",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Http-Logging",
+        "DisplayName":  "Journalisation HTTP",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Request-Monitor",
+        "DisplayName":  "Observateur de demandes",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Log-Libraries",
+        "DisplayName":  "Outils de journalisation",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Http-Tracing",
+        "DisplayName":  "Suivi de traces",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Performance",
+        "DisplayName":  "Performance",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Stat-Compression",
+        "DisplayName":  "Compression du contenu statique",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Security",
+        "DisplayName":  "Sécurité",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Filtering",
+        "DisplayName":  "Filtrage des demandes",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Windows-Auth",
+        "DisplayName":  "Authentification Windows",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-IP-Security",
+        "DisplayName":  "Restrictions IP et de domaine",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-App-Dev",
+        "DisplayName":  "Développement d\u0027applications",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-ASP",
+        "DisplayName":  "ASP",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-ISAPI-Ext",
+        "DisplayName":  "Extensions ISAPI",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Mgmt-Tools",
+        "DisplayName":  "Outils de gestion",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Mgmt-Console",
+        "DisplayName":  "Console de gestion IIS",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Mgmt-Compat",
+        "DisplayName":  "Compatibilité avec la gestion IIS 6",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Metabase",
+        "DisplayName":  "Compatibilité de métadonnées IIS 6",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-Scripting-Tools",
+        "DisplayName":  "Scripts et outils de gestion IIS",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "AD-Domain-Services",
+        "DisplayName":  "Services AD DS",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "AD-Certificate",
+        "DisplayName":  "Services de certificats Active Directory",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "ADCS-Cert-Authority",
+        "DisplayName":  "Autorité de certification",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "ADCS-Web-Enrollment",
+        "DisplayName":  "Inscription de l’autorité de certification via le Web",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FileAndStorage-Services",
+        "DisplayName":  "Services de fichiers et de stockage",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "File-Services",
+        "DisplayName":  "Services de fichiers et iSCSI",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-FileServer",
+        "DisplayName":  "Serveur de fichiers",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-SyncShareService",
+        "DisplayName":  "Dossiers de travail",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-DFS-Namespace",
+        "DisplayName":  "Espaces de noms DFS",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-Resource-Manager",
+        "DisplayName":  "Gestionnaire de ressources du serveur de fichiers",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-DFS-Replication",
+        "DisplayName":  "Réplication DFS",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Storage-Services",
+        "DisplayName":  "Services de stockage",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Remote-Assistance",
+        "DisplayName":  "Assistance à distance",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Windows-Internal-Database",
+        "DisplayName":  "Base de données interne Windows",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-Framework-45-Features",
+        "DisplayName":  "Fonctionnalités de .NET Framework 4.7",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-Framework-45-Core",
+        "DisplayName":  ".NET Framework 4.7",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-WCF-Services45",
+        "DisplayName":  "Services WCF",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-WCF-TCP-PortSharing45",
+        "DisplayName":  "Partage de port TCP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "GPMC",
+        "DisplayName":  "Gestion de stratégie de groupe",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Web-WHC",
+        "DisplayName":  "IIS Hostable Web Core",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT",
+        "DisplayName":  "Outils d’administration de serveur distant",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-Feature-Tools",
+        "DisplayName":  "Outils d’administration de fonctionnalités",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-SNMP",
+        "DisplayName":  "Outils SNMP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-System-Insights",
+        "DisplayName":  "System Insights Module for Windows PowerShell",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-Role-Tools",
+        "DisplayName":  "Outils d’administration de rôles",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-Tools",
+        "DisplayName":  "Outils AD DS et AD LDS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-PowerShell",
+        "DisplayName":  "Module Active Directory pour Windows PowerShell",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADDS",
+        "DisplayName":  "Outils AD DS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-AdminCenter",
+        "DisplayName":  "Centre d’administration Active Directory",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADDS-Tools",
+        "DisplayName":  "Composants logiciels enfichables et outils en ligne de commande AD DS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-NPAS",
+        "DisplayName":  "Outils de la stratégie réseau et des services d\u0027accès",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-File-Services",
+        "DisplayName":  "Outils de services de fichiers",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-DFS-Mgmt-Con",
+        "DisplayName":  "Outils de gestion DFS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-FSRM-Mgmt",
+        "DisplayName":  "Outils du Gestionnaire de ressources du serveur de fichiers",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADCS",
+        "DisplayName":  "Outils des services de certificats Active Directory",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADCS-Mgmt",
+        "DisplayName":  "Outils de gestion de l’autorité de certification",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-DHCP",
+        "DisplayName":  "Outils du serveur DHCP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-DNS-Server",
+        "DisplayName":  "Outils du serveur DNS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "WoW64-Support",
+        "DisplayName":  "Prise en charge WoW64",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "CMAK",
+        "DisplayName":  "RAS Connection Manager Administration Kit (CMAK)",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Windows-Server-Backup",
+        "DisplayName":  "Sauvegarde Windows Server",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "SNMP-Service",
+        "DisplayName":  "Service SNMP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "SNMP-WMI-Provider",
+        "DisplayName":  "Fournisseur WMI SNMP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-SMB1",
+        "DisplayName":  "SMB 1.0/CIFS File Sharing Support",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-SMB1-CLIENT",
+        "DisplayName":  "SMB 1.0/CIFS Client",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-SMB1-SERVER",
+        "DisplayName":  "SMB 1.0/CIFS Server",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "System-DataArchiver",
+        "DisplayName":  "System Data Archiver",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "System-Insights",
+        "DisplayName":  "System Insights",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Telnet-Client",
+        "DisplayName":  "Telnet Client",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Windows-Defender",
+        "DisplayName":  "Windows Defender Antivirus",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "PowerShellRoot",
+        "DisplayName":  "Windows PowerShell",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "PowerShell",
+        "DisplayName":  "Windows PowerShell 5.1",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "PowerShell-ISE",
+        "DisplayName":  "Windows PowerShell ISE",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "XPS-Viewer",
+        "DisplayName":  "XPS Viewer",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-1",
+        "RunspaceId":  "e9c70983-54e6-4e59-a33c-df7e9741477c",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "DNS",
+        "DisplayName":  "Serveur DNS",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "AD-Domain-Services",
+        "DisplayName":  "Services AD DS",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FileAndStorage-Services",
+        "DisplayName":  "Services de fichiers et de stockage",
+        "FeatureType":  "Role",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "File-Services",
+        "DisplayName":  "Services de fichiers et iSCSI",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "FS-FileServer",
+        "DisplayName":  "Serveur de fichiers",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Storage-Services",
+        "DisplayName":  "Services de stockage",
+        "FeatureType":  "Role Service",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-Framework-45-Features",
+        "DisplayName":  ".NET Framework 4.8 Features",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-Framework-45-Core",
+        "DisplayName":  ".NET Framework 4.8",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-WCF-Services45",
+        "DisplayName":  "Services WCF",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "NET-WCF-TCP-PortSharing45",
+        "DisplayName":  "Partage de port TCP",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "Windows-Defender",
+        "DisplayName":  "Antivirus Microsoft Defender",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "AzureArcSetup",
+        "DisplayName":  "Azure Arc Setup",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "GPMC",
+        "DisplayName":  "Gestion de stratégie de groupe",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT",
+        "DisplayName":  "Outils d’administration de serveur distant",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-Role-Tools",
+        "DisplayName":  "Outils d’administration de rôles",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-Tools",
+        "DisplayName":  "Outils AD DS et AD LDS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-PowerShell",
+        "DisplayName":  "Module Active Directory pour Windows PowerShell",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADDS",
+        "DisplayName":  "Outils AD DS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-AD-AdminCenter",
+        "DisplayName":  "Centre d’administration Active Directory",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-ADDS-Tools",
+        "DisplayName":  "Composants logiciels enfichables et outils en ligne de commande AD DS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-File-Services",
+        "DisplayName":  "Outils de services de fichiers",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-DFS-Mgmt-Con",
+        "DisplayName":  "Outils de gestion DFS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-FSRM-Mgmt",
+        "DisplayName":  "Outils du Gestionnaire de ressources du serveur de fichiers",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "RSAT-DNS-Server",
+        "DisplayName":  "Outils du serveur DNS",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "WoW64-Support",
+        "DisplayName":  "Prise en charge WoW64",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "System-DataArchiver",
+        "DisplayName":  "Programme d\u0027archivage de données système",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "PowerShellRoot",
+        "DisplayName":  "Windows PowerShell",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "PowerShell",
+        "DisplayName":  "Windows PowerShell 5.1",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    },
+    {
+        "ServerName":  "",
+        "Name":  "XPS-Viewer",
+        "DisplayName":  "XPS Viewer",
+        "FeatureType":  "Feature",
+        "PSComputerName":  "DC-2",
+        "RunspaceId":  "3c6c5e65-6ffc-4fc3-8d63-2940028c81aa",
+        "PSShowComputerName":  "True"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "ServerName"
+                    },
+                    {
+                        "data":  "Name"
+                    },
+                    {
+                        "data":  "DisplayName"
+                    },
+                    {
+                        "data":  "FeatureType"
+                    },
+                    {
+                        "data":  "PSComputerName"
+                    },
+                    {
+                        "data":  "RunspaceId"
+                    },
+                    {
+                        "data":  "PSShowComputerName"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+                    {
+                        "extend":  "copyHtml5"
+                    },
+                    {
+                        "extend":  "excelHtml5",
+                        "exportOptions":  {
+                                              "format":      {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }
+                                          }
+                    },
+                    {
+                        "extend":  "csvHtml5",
+                        "text":  "CSV",
+                        "charset":  "utf-8",
+                        "extension":  ".csv",
+                        "fieldSeparator":  ";",
+                        "bom":  true
+                    },
+                    {
+                        "extend":  "pdfHtml5",
+                        "pageSize":  "A3",
+                        "orientation":  "landscape"
+                    },
+                    {
+                        "extend":  "pageLength"
+                    },
+                    {
+                        "extend":  "searchBuilder"
+                    }
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-OoKhnblx" class="dataTables display compact"><thead><tr><th>ServerName</th><th>Name</th><th>DisplayName</th><th>FeatureType</th><th>PSComputerName</th><th>RunspaceId</th><th>PSShowComputerName</th></tr></thead><tfoot><tr><th>ServerName</th><th>Name</th><th>DisplayName</th><th>FeatureType</th><th>PSComputerName</th><th>RunspaceId</th><th>PSShowComputerName</th></tr></tfoot></table></div></div></div></div><div class="defaultSection overflowHidden " style="flex-basis:100%"><div class="defaultSectionHead" style="background-color:#008080"><div class="defaultSectionText"><a name="Software Installed">Software Installed </a>&nbsp;<a id="show_anchor-vp0whct" href="javascript:void(0)" onclick="show('anchor-vp0whct'); " style="display:none">(Show)</a><a id="hide_anchor-vp0whct" href="javascript:void(0)" onclick="hide('anchor-vp0whct'); " style="display:none">(Hide)</a></div></div><div name="anchor-vp0whct" id="anchor-vp0whct" class="flexParent flexElement overflowHidden defaultSectionContent"><div id="anchor-vp0whct" class="flexParent flexElement overflowHidden defaultSectionContent collapsable"><script>                $(document).ready(function() {
+                    $.fn.dataTable.moment( 'L' );
+                    
+                    
+                    
+                    //  Table code
+                    var table = $('#DT-OPRvShWx').DataTable(
+                        {
+    "dom":  "Bfrtip",
+    "searchFade":  false,
+    "scrollCollapse":  false,
+    "ordering":  true,
+    "order":  [
+                  0,
+                  "asc"
+              ],
+    "rowGroup":  "",
+    "info":  true,
+    "procesing":  true,
+    "select":  true,
+    "searching":  true,
+    "stateSave":  true,
+    "paging":  true,
+    "pagingType":  [
+                       "full_numbers"
+                   ],
+    "lengthMenu":  [
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           -1
+                       ],
+                       [
+                           15,
+                           25,
+                           50,
+                           100,
+                           "All"
+                       ]
+                   ],
+    "pageLength":  10,
+    "language":  {
+
+                 },
+    "data":  [
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Notepad++ (64-bit x64)",
+        "Version":  "8.4.8",
+        "InstallDate":  "",
+        "Publisher":  "Notepad++ Team",
+        "EstimatedSizeMB":  "15.97"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "7-Zip 19.00 (x64 edition)",
+        "Version":  "19.00.00.0",
+        "InstallDate":  "2020-11-03",
+        "Publisher":  "Igor Pavlov",
+        "EstimatedSizeMB":  "5.13"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft .NET Host FX Resolver - 8.0.5 (x64)",
+        "Version":  "64.20.13583",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "0.32"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft .NET Runtime - 8.0.5 (x64)",
+        "Version":  "64.20.13583",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "70"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438",
+        "Version":  "14.42.34438",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "2.32"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Network Monitor 3.4",
+        "Version":  "3.4.2350.0",
+        "InstallDate":  "2021-04-04",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "11.23"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft .NET Host - 8.0.5 (x64)",
+        "Version":  "64.20.13583",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "0.47"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office 64-bit Components 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "47.44"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Shared 64-bit MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "12.04"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Network Monitor: NetworkMonitor Parsers 3.4",
+        "Version":  "3.4.2350.0",
+        "InstallDate":  "2021-04-04",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "20.36"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Agent Service",
+        "Version":  "1.0.9246",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "InfraSOS FZCO",
+        "EstimatedSizeMB":  "8.41"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "NXLog-CE",
+        "Version":  "3.2.2329",
+        "InstallDate":  "2023-04-17",
+        "Publisher":  "NXLog Ltd",
+        "EstimatedSizeMB":  "11.61"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Windows Desktop Runtime - 8.0.5 (x64)",
+        "Version":  "64.20.13589",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "89.92"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438",
+        "Version":  "14.42.34438",
+        "InstallDate":  "2025-05-26",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "11.6"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "NSClient++ (x64)",
+        "Version":  "0.9.1.0",
+        "InstallDate":  "2025-05-20",
+        "Publisher":  "MySolutions NORDIC",
+        "EstimatedSizeMB":  "91.22"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Npcap",
+        "Version":  "1.78",
+        "InstallDate":  "",
+        "Publisher":  "Nmap Project",
+        "EstimatedSizeMB":  "0"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Professionnel Plus 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "0"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Total Network Inventory 4.9.0 (build 5222)",
+        "Version":  "4.9.0 (build 5222)",
+        "InstallDate":  "2021-04-16",
+        "Publisher":  "Softinventive Lab",
+        "EstimatedSizeMB":  "53.43"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Wireshark 4.2.6 x64",
+        "Version":  "4.2.6",
+        "InstallDate":  "",
+        "Publisher":  "The Wireshark developer community, https://www.wireshark.org",
+        "EstimatedSizeMB":  "234.47"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Edge",
+        "Version":  "136.0.3240.92",
+        "InstallDate":  "2021-03-18",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "95.43"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Access MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "11.08"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Excel MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "13.18"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft PowerPoint MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "32.54"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Publisher MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "17.9"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Outlook MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "15.18"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Word MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "19.77"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Proofing Tools 2013 - اللغة العربية",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "26.09"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Korrekturhilfen 2013 - Deutsch",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "35.83"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Proofing Tools 2013 - English",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "20.85"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Outils de vérification linguistique 2013 de Microsoft Office - Français",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "27.82"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Proofing Tools 2013 - Nederlands",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "11.3"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Proofing Tools 2013 - Español",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "22.87"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Proofing (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "0.86"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft InfoPath MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "10.16"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Shared MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "41.89"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft DCF MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "1.39"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft OneNote MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "28.11"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Groove MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "8.69"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office OSM MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "1.02"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office OSM UX MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "8.1"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Lync MUI (French) 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "5.55"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Office Professional Plus 2013",
+        "Version":  "15.0.4569.1506",
+        "InstallDate":  "2021-02-10",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "1451.34"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438",
+        "Version":  "14.42.34438.0",
+        "InstallDate":  "",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "20.72"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219",
+        "Version":  "10.0.40219",
+        "InstallDate":  "2021-04-16",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "11.13"
+    },
+    {
+        "Computername":  "DC-1",
+        "Displayname":  "Microsoft Windows Desktop Runtime - 8.0.5 (x64)",
+        "Version":  "8.0.5.33617",
+        "InstallDate":  "",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "216.66"
+    },
+    {
+        "Computername":  "DC-2",
+        "Displayname":  "Microsoft Edge",
+        "Version":  "136.0.3240.92",
+        "InstallDate":  "2025-05-25",
+        "Publisher":  "Microsoft Corporation",
+        "EstimatedSizeMB":  "0"
+    }
+],
+    "columns":  [
+                    {
+                        "data":  "Computername"
+                    },
+                    {
+                        "data":  "Displayname"
+                    },
+                    {
+                        "data":  "Version"
+                    },
+                    {
+                        "data":  "InstallDate"
+                    },
+                    {
+                        "data":  "Publisher"
+                    },
+                    {
+                        "data":  "EstimatedSizeMB"
+                    }
+                ],
+    "deferRender":  true,
+    "buttons":  [
+                    {
+                        "extend":  "copyHtml5"
+                    },
+                    {
+                        "extend":  "excelHtml5",
+                        "exportOptions":  {
+                                              "format":      {
+        body: function (data, row, column, node) {
+            data = $('<p>' + data + '</p>').text(); return $.isNumeric(data.replace(',', '.')) ? data.replace(',', '.') : data;
+        }
+    }
+                                          }
+                    },
+                    {
+                        "extend":  "csvHtml5",
+                        "text":  "CSV",
+                        "charset":  "utf-8",
+                        "extension":  ".csv",
+                        "fieldSeparator":  ";",
+                        "bom":  true
+                    },
+                    {
+                        "extend":  "pdfHtml5",
+                        "pageSize":  "A3",
+                        "orientation":  "landscape"
+                    },
+                    {
+                        "extend":  "pageLength"
+                    },
+                    {
+                        "extend":  "searchBuilder"
+                    }
+                ],
+    "responsive":  {
+                       "details":  {
+                                       "type":  "inline"
+                                   }
+                   }
+}
+                    );
+                    
+                    
+                    
+                });</script><div class="flexElement overflowHidden"><table width="100%" id="DT-OPRvShWx" class="dataTables display compact"><thead><tr><th>Computername</th><th>Displayname</th><th>Version</th><th>InstallDate</th><th>Publisher</th><th>EstimatedSizeMB</th></tr></thead><tfoot><tr><th>Computername</th><th>Displayname</th><th>Version</th><th>InstallDate</th><th>Publisher</th><th>EstimatedSizeMB</th></tr></tfoot></table></div></div></div></div></div></div></div><footer><script type="text/javascript">function isEmptyOrSpaces(str) {
+    return !str || str.trim() === '';
+}
+function dataTablesCheckCondition(condition, data) {
+    var columnName = condition['columnName'];
+    var reverseCondition = condition['reverseCondition'];
+    var columnId = condition['columnId'];
+    var operator = condition['operator'].toLowerCase();
+    if (condition['dataStore'].toLowerCase() != 'html') {
+        var columnExists = false;
+        // we need to find whether the column name exists or not, and to make sure we know the column name exact case (it's case sensitive) just in case user provided it wrong
+        Object.getOwnPropertyNames(data).forEach(
+            function (val) {
+                if (val.toLowerCase() == columnName.toLowerCase()) {
+                    columnName = val;
+                    columnExists = true;
+                    return
+                }
+            }
+        );
+        if (!columnExists) {
+            return false;
+        }
+        var columnValue = data[columnName];
+    } else {
+        // check if columnid is set - if it's not set it means the column doesn't exists so we dont' proceed
+        if (columnId == -1) {
+            return false;
+        }
+        var columnValue = data[columnId];
+    }
+    var conditionValue = condition['value'];
+
+    //console.log('before: ' + conditionValue + ' || ' + columnValue + ' type: ' + condition['type']);
+    if (condition['type'] == 'bool') {
+        columnValue = columnValue.toString().toLowerCase();
+        conditionValue = conditionValue.toString().toLowerCase();
+    } else if (condition['type'] == 'string') {
+        if (!condition['caseSensitive']) {
+            columnValue = columnValue.toString().toLowerCase();
+            conditionValue = conditionValue.toString().toLowerCase();
+        }
+    } else if (condition['type'] == 'number') {
+        if (Array.isArray(conditionValue)) {
+            // this will be used for between, betweenInclusive
+            // if its an array we need to make sure to convert conditionValue within an array
+            var conditionValueTemporary = [];
+
+            for (var i = 0; i < conditionValue.length; i++) {
+                //for (let value of conditionValue) {
+                if (!isEmptyOrSpaces(conditionValue[i].toString())) {
+                    conditionValueTemporary.push(Number(conditionValue[i]));
+                } else {
+                    conditionValueTemporary.push(undefined);
+                }
+            }
+            conditionValue = conditionValueTemporary;
+            if (!isEmptyOrSpaces(columnValue.toString())) {
+                columnValue = Number(columnValue);
+            } else {
+                columnValue = undefined;
+            }
+        } else {
+            // This logic is to get rid of empty string which is normally treated as 0
+            if (!isEmptyOrSpaces(conditionValue.toString())) {
+                conditionValue = Number(conditionValue);
+            } else {
+                conditionValue = undefined;
+            }
+            if (!isEmptyOrSpaces(columnValue.toString())) {
+                columnValue = Number(columnValue);
+            } else {
+                columnValue = undefined;
+            }
+        }
+    } else if (condition['type'] == 'date') {
+        if (Array.isArray(condition['valueDate'])) {
+            var conditionValueTemporary = [];
+            for (var i = 0; i < condition['valueDate'].length; i++) {
+                //for (let value of condition['valueDate']) {
+                var valueDate = condition['valueDate'][i];
+                conditionValueTemporary.push(new Date(valueDate.year, valueDate.month - 1, valueDate.day, valueDate.hours, valueDate.minutes, valueDate.seconds));
+            }
+            conditionValue = conditionValueTemporary;
+        } else {
+            // bring conditionValue to proper date
+            var valueDate = condition['valueDate'];
+            conditionValue = new Date(valueDate.year, valueDate.month - 1, valueDate.day, valueDate.hours, valueDate.minutes, valueDate.seconds);
+        }
+        // bring columnValue based on dateTimeFormat provided
+        var momentConversion = moment(columnValue, condition['dateTimeFormat']);
+        columnValue = new Date(momentConversion);
+    }
+
+    if (reverseCondition) {
+        var sideLeft = conditionValue;
+        var sideRight = columnValue;
+    } else {
+        var sideLeft = columnValue;
+        var sideRight = conditionValue;
+    }
+    //console.log('after: ' + conditionValue + ' || ' + columnValue);
+    if (operator == 'eq') {
+        if (sideLeft == sideRight) {
+            return true;
+        }
+    } else if (operator == 'ne') {
+        if (sideLeft != sideRight) {
+            return true;
+        }
+    } else if (operator == 'gt') {
+        if (sideLeft > sideRight) {
+            return true;
+        }
+    } else if (operator == 'lt') {
+        if (sideLeft < sideRight) {
+            return true;
+        }
+    } else if (operator == 'le') {
+        if (sideLeft <= sideRight) {
+            return true;
+        }
+    } else if (operator == 'ge') {
+        if (sideLeft >= sideRight) {
+            return true;
+        }
+    } else if (operator == 'in') {
+        if (sideRight.indexOf(sideLeft) != -1) {
+            return true;
+        }
+    } else if (operator == 'notin') {
+        if (sideRight.indexOf(sideLeft) == -1) {
+            return true;
+        }
+    } else if (operator == 'contains' || operator == 'like') {
+        //var compareValue = conditionValue.replace('*', '.*')
+        var regex = new RegExp(sideRight);
+        if (regex.test(sideLeft)) {
+            return true;
+        }
+    } else if (operator == 'notcontains' || operator == 'notlike') {
+        //var compareValue = conditionValue.replace('*', '.*')
+        var regex = new RegExp(sideRight)
+        if (!regex.test(sideLeft)) {
+            return true;
+        }
+    } else if (operator == 'betweeninclusive') {
+        if (Array.isArray(sideRight) && sideLeft >= sideRight[0] && sideLeft <= sideRight[1]) {
+            return true;
+        }
+    } else if (operator == 'between') {
+        if (Array.isArray(sideRight) && sideLeft > sideRight[0] && sideLeft < sideRight[1]) {
+            return true;
+        }
+    }
+    return false;
+}
+function dataTablesConditionalFormatting(row, data, conditionsContainer, highlightColumn, css, failCss) {
+    var conditionsMatch = [];
+    var found = false;
+    for (var i = 0; i < conditionsContainer.length; i++) {
+        var container = conditionsContainer[i];
+        for (var k = 0; k < container['conditions'].length; k++) {
+            var condition = container['conditions'][k];
+            conditionsMatch.push(
+                dataTablesCheckCondition(condition, data)
+            );
+        }
+        if (container['logic'] == 'AND') {
+            // if (conditionsMatch.every(value => value === true)) {
+            //     found = true;
+            // }
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] !== true) {
+                    found = false;
+                    break;
+                } else {
+                    found = true;
+                }
+            }
+
+
+        } else if (container['logic'] == 'OR') {
+            //if (conditionsMatch.some(value => value === true)) {
+            //    found = true;
+            //}
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] === true) {
+                    found = true;
+                    break;
+                }
+            }
+
+        } else if (container['logic'] == 'NONE') {
+            // if (conditionsMatch.every(value => value != true)) {
+            //    found = true;
+            //}
+
+            for (var a = 0; a < conditionsMatch.length; a++) {
+                if (conditionsMatch[a] !== false) {
+                    found = false;
+                    break;
+                } else {
+                    found = true;
+                }
+            }
+        }
+    }
+    if (found) {
+        if (highlightColumn == null) {
+            $('td', row).css(css);
+        } else {
+            for (var a = 0; a < highlightColumn.length; a++) {
+                var column = highlightColumn[a];
+                //for (let column of highlightColumn) {
+                $("td:eq(" + column + ")", row).css(css);
+
+                //if (data.Type == "group") {
+                //    $('td:eq(6)', row).html('<b>A</b>');
+                //}
+            }
+        }
+    } else {
+        if (failCss) {
+            if (highlightColumn == null) {
+                $('td', row).css(failCss);
+            } else {
+                for (var a = 0; a < highlightColumn.length; a++) {
+                    var column = highlightColumn[a];
+                    //for (let column of highlightColumn) {
+                    $("td:eq(" + column + ")", row).css(failCss);
+                }
+            }
+        }
+    }
+}</script> <script type="text/javascript">var tabbis = (function () {
+    var fn = {};
+
+    var data;
+    var types = ['tab', 'pane'];
+    var type;
+    var groups = [];
+    var activeGroups = [];
+    var activeChildren = [];
+    var activeItems = [];
+    var indexGroup;
+    var indexItem;
+    var memory = [];
+
+    fn.init = function (options) {
+        data = options;
+        fn.setDefaults();
+        fn.setMemory();
+
+        groups['tab'] = document.querySelectorAll(data.tabGroup);
+        groups['pane'] = document.querySelectorAll(data.paneGroup);
+
+        for (var groupIndex = 0; groupIndex < groups['tab'].length; groupIndex++) {
+            var tabItems = groups['tab'][groupIndex].children;
+
+            for (var itemIndex = 0; itemIndex < tabItems.length; itemIndex++) {
+                tabItems[itemIndex].addEventListener('click', fn.onClick.bind(this, groupIndex, itemIndex), false);
+
+                indexGroup = groupIndex;
+                indexItem = itemIndex;
+
+                if (!fn.hasMemory()) continue;
+                fn.setNodes(groupIndex, itemIndex);
+            }
+        }
+    };
+
+    fn.onClick = function (groupIndex, itemIndex) {
+        fn.setNodes(groupIndex, itemIndex);
+        fn.setCallback(indexGroup, indexItem);
+    };
+
+    fn.setNodes = function (groupIndex, itemIndex) {
+        indexGroup = groupIndex;
+        indexItem = itemIndex;
+
+        for (var i = 0; i < types.length; i++) {
+            type = types[i];
+
+            fn.setActiveGroup();
+            fn.setActiveChildren();
+            fn.setActiveItems();
+            fn.putActiveClass();
+        }
+
+        memory[groupIndex] = [];
+        memory[groupIndex][itemIndex] = true;
+
+        try {
+            localStorage.setItem('tabbis', JSON.stringify(memory));
+        } catch (e) {
+            console.log('Tabs local storage failed. Most likely IE in use.')
+        }
+    };
+
+    //fn.hasMemory = function () {
+    //    if (typeof memory === 'undefined') return;
+    //    if (typeof memory[indexGroup] === 'undefined') return;
+    //    if (typeof memory[indexGroup][indexItem] === 'undefined') return;
+    //    if (memory[indexGroup][indexItem] !== true) return;
+    //    return true;
+    //};
+
+    fn.hasMemory = function () {
+        // https://stackoverflow.com/questions/41902495/javascript-multidimensional-array-is-valid
+
+        if (typeof memory === 'undefined') return;
+        if (typeof memory[indexGroup] === 'undefined') return;
+        if (memory[indexGroup] === null) return;
+        if (typeof memory[indexGroup][indexItem] === 'undefined') return;
+        if (memory[indexGroup][indexItem] === null) return;
+        if (memory[indexGroup][indexItem] !== true) return;
+        return true;
+    };
+
+    fn.setMemory = function () {
+        try {
+            if (localStorage.getItem('tabbis') === null) return;
+            if (localStorage.getItem('tabbis').length == 0) return;
+
+            memory = Object.values(JSON.parse(localStorage.getItem('tabbis')));
+        } catch (e) {
+            console.log('Tabs local storage failed. Most likely IE in use.')
+        }
+    };
+
+    fn.putActiveClass = function () {
+        for (var i = 0; i < activeChildren[type].length; i++) {
+            activeChildren[type][i].classList.remove(data[type + 'Active']);
+        }
+
+        activeItems[type].classList.add(data[type + 'Active']);
+    };
+
+    fn.setDefaults = function () {
+        for (var i = 0; i < types.length; i++) {
+            type = types[i];
+
+            fn.setOption(type + 'Group', '[data-' + type + 's]');
+            fn.setOption(type + 'Active', 'active');
+        }
+    };
+
+    fn.setOption = function (key, value) {
+        data = data || [];
+        data[key] = data[key] || value;
+    };
+
+    fn.setActiveGroup = function () {
+        activeGroups[type] = groups[type][indexGroup];
+    };
+
+    fn.setActiveChildren = function () {
+        activeChildren[type] = activeGroups[type].children;
+    };
+
+    fn.setActiveItems = function () {
+        activeItems[type] = activeChildren[type][indexItem];
+    };
+
+    fn.setCallback = function () {
+        if (typeof data.callback === "function") {
+            data.callback(activeItems.tab, activeItems.pane);
+        }
+    };
+
+    fn.reset = function () {
+        for (var groupIndex = 0; groupIndex < groups['tab'].length; groupIndex++) {
+            tabItems = groups['tab'][groupIndex].children;
+            paneItems = groups['pane'][groupIndex].children;
+
+            for (var itemIndex = 0; itemIndex < tabItems.length; itemIndex++) {
+                tabItems[itemIndex].classList.remove(data['tabActive']);
+                paneItems[itemIndex].classList.remove(data['paneActive']);
+            }
+        }
+        localStorage.removeItem('tabbis');
+    };
+
+    return fn;
+})();</script> <script type="text/javascript">var tabs = tabbis.init({
+    tabGroup: "[data-tabs]",
+    paneGroup: "[data-panes]",
+    tabActive: "active",
+    paneActive: "active",
+    callback: function (tab, pane) {
+        // console.log("TAB id:" + tab.id + pane.id + tableid);
+        // this makes sure to refresh tables on given tab change to make sure they have buttons and everything
+        // which tab has which table
+        findObjectsToRedraw(tab.id + "-Content");
+    }
+});
+
+// in theory should take care of removing local storage for tabbis
+// some errors occurs if the local storage is not cleaned after a while
+window.addEventListener("unload", tabbis.remove, false);
+</script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/evotecit/cdn@0.0.27/JS/redrawObjects.min.js"></script></footer></body></html>
